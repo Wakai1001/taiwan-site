@@ -5,11 +5,44 @@
 body {
   font-family: "Zen Kaku Gothic New,sans-serif";
   font-size: 12px;
+  font-weight: 400;
 }
 
 /* header */
 
+/* footer */
+footer {
+  background-color: #007AB7;
+}
 
+.center {
+  text-align: center;
+}
+
+.flag {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  color: #fff;
+  letter-spacing: 0;
+  line-height: 1;
+  max-width: 201px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer ul li {
+  display: block;
+  margin-bottom: 12px;
+  border-bottom: #fff solid 1px;
+
+}
+
+footer ul span {
+  margin-bottom: 8px;
+}
 
 
 
@@ -129,7 +162,7 @@ body {
 /* ロード画面 */
 body {
 
-  background-color: blue;
+  /* background-color: #007AB7; */
   overflow: hidden;
 
 }
