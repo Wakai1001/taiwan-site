@@ -1,1 +1,42 @@
 @charset "UTF-8";
+
+
+
+body {
+  background-color: blue;
+  overflow: hidden;
+
+}
+
+#uguisudani {
+  animation: yokohama 3s infinite linear;
+  transform: scale(3);
+  position: relative;
+  top: 50vh;
+  left: 50vw;
+
+
+}
+
+@keyframes yokohama {
+  0% {
+    opacity: 0;
+    transform: scale(5);
+  }
+
+  25% {
+    transform: scale(3);
+  }
+
+  50% {
+    /* display: none; */
+    transform: scale(5);
+  }
+
+  100% {
+    transform: scale(15);
+    opacity: 1;
+  }
+
+
+}
