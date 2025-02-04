@@ -33,8 +33,8 @@ body {
 .menu_icon {
   /* 右上に絶対配置 */
   position: absolute;
-  right: 8px;
-  top: 8px;
+  right: 12px;
+  top: 20px;
   height: 20px;
   padding-top: 5px;
   /* ポインターの形状 指 */
@@ -43,7 +43,6 @@ body {
 
 /* span 要素 中央の線作成 */
 .navicon {
-
   /* ブロックレベルへ変更 */
   display: block;
   /* 線の長さ */
@@ -51,11 +50,9 @@ body {
   /* 線の太さ */
   height: 2px;
   /* 線の色 */
-  background-color: #fff;
-
-  /* ::before と ::after の基準要素*/
+  background: #fff;
+  /* ::before と ::after の基準要素 */
   position: relative;
-
 }
 
 /* 上と下の線作成 上下共通 */
@@ -127,13 +124,6 @@ body {
   transform: rotate(-45deg);
   top: 0;
   /* 元 10px */
-}
-
-.menu_btn:checked~.menu_icon .navicon::after {
-  /* 時計回りに回転 */
-  transform: rotate(45deg);
-  top: 0;
-  /* 元 -10px */
 }
 
 /* ロード画面 */
