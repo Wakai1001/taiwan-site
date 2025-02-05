@@ -1,8 +1,11 @@
 @charset "UTF-8";
 
-body {
-  /* ここから */
-  animation: nizisanzi 5s infinite linear;
+
+
+
+
+/* ここから */
+/* animation: nizisanzi 5s infinite linear;
 }
 
 p {
@@ -11,7 +14,7 @@ p {
 
 img {
   animation: idou 1s infinite;
-}
+} */
 
 /* ここまでコメントアウトでアニメーションを消す */
 
@@ -69,8 +72,131 @@ img {
 
 }
 
+body {
+  text-align: center;
+}
+
+main {
+  margin: 0 8px;
+}
+
+main img {
+  max-width: 100%;
+  ;
+}
+
+.main {
+  animation: otyanomizu 10s infinite
+}
+
+@keyframes otyanomizu {
+  0% {
+    filter: brightness(0%);
+  }
+
+  100% {
+    filter: brightness(1300%);
+  }
+}
 
 
-h1 {
-  max-width: 100vw;
+
+h2 {
+  width: 60vw;
+  height: 10vh;
+  padding-top: 3px;
+  margin-bottom: 40px;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 auto;
+  background: url(../image/waku.png) no-repeat bottom center/cover;
+}
+
+.tukuba {
+  font-size: 12px;
+}
+
+
+.wakuwakusan img {
+  max-width: 220px;
+}
+
+
+p {
+  font-size: 12px;
+}
+
+.yoko {
+  display: block;
+  display: flex;
+}
+
+.yoko img {
+  width: 46vw;
+  justify-content: space-between;
+}
+
+.hutozi {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 40px 0 20px;
+}
+
+.attraction {
+  margin: 0 40px;
+}
+
+.haikei {
+  background-color: #6CBAD8;
+  margin: 20px 0;
+  padding: 20px 18px;
+}
+
+
+.gourmet {
+  margin: 0 40px;
+}
+
+.healing {
+  margin: 0 40px;
+}
+
+.ookime {
+  font-size: 24px;
+}
+
+.sen {
+  display: block;
+  height: 1px;
+  width: 70vw;
+  background: black;
+  margin: 20px auto;
+}
+
+.gourmet .ookime {
+  margin: 40px 0 8px;
+}
+
+.healing .ookime {
+  margin: 40px 0 20px;
+}
+
+.hero {
+  position: relative;
+}
+
+#rog {
+  filter: brightness(0);
+  background-color: transparent;
+  position: absolute;
+  top: 30vh;
+  left: 15vw;
+}
+
+header {
+  width: 100%;
+}
+
+header image {
+  width: 100%;
 }
