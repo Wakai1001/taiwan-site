@@ -1,1 +1,115 @@
 @charset "UTF-8";
+
+body {
+  max-width: 375px;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+
+/* width100%の方がいいと思う */
+header {
+  background: url(../image/taipei_top.png) no-repeat top center/cover;
+  /* width: 100%; */
+  height: 177.86vw;
+  padding: 2.133vw 3.2vw;
+  position: relative;
+  max-width: 375px;
+  height: 667px;
+}
+
+/* 台北の文字がでかいです */
+.taipei_top2 {
+  /* 台北のデカ文字 */
+  height: 99.2vw;
+
+  /* 199/375*100 */
+  width: 53vw;
+  /* height: 372px; */
+  display: block;
+  margin: auto;
+  padding-top: 120px;
+}
+
+header p {
+  color: #fff;
+  /* font-size: 12px; */
+  font-size: 3.2vw;
+  font-weight: bold;
+  width: 65.86vw;
+  position: absolute;
+  /* top: 90.104vw; */
+  bottom: 2.133vw;
+  right: 1vw;
+  line-height: 19.2px;
+}
+
+
+.taipei_top {
+  width: 295px;
+  height: 180px;
+  /* カンプは領域で挿入してるのでサイズは違う(rectangle14) */
+}
+
+/* sction Attraction */
+.Attraction {
+  max-width: 295px;
+  height: 1740px;
+  margin: auto 40px;
+}
+
+/* ラーメンみたいな画像付けた見出しです(使いまわせます) */
+.heading {
+  width: 60vw;
+  height: 10vw;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-top: 3px;
+  font-size: 6.4vw;
+  font-weight: 400;
+  text-align: center;
+  background: url(../image/frame.png) no-repeat bottom center/cover;
+}
+
+/* 見出しの小さい文字です */
+.sub {
+  font-size: 11px;
+}
+
+/* Attraction内の各章(九分、台北101) */
+.subtitle {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 40px auto 20.5px;
+  text-align: center;
+}
+
+.paragraph {
+  font-size: 12px;
+  line-height: 19.2px;
+  margin: 0;
+  text-align: center;
+  /* w263をvw */
+  width: 70vw;
+}
+
+.blue {
+  height: 231px;
+  width: 78.6vw;
+  background-color: rgba(108, 196, 216, 0.2);
+  padding: 20px 16px;
+  margin: 0 20.5px;
+  /* display: block; */
+  /* text-align: center; */
+}
+
+.imagebox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text2 {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
