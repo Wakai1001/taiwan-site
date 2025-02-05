@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
 
-
+html {
+  overflow-x: hidden;
+}
 
 
 /* ここから */
-/* animation: nizisanzi 5s infinite linear;
+/* body{
+ animation: nizisanzi 5s infinite linear;
 }
 
 p {
@@ -14,7 +17,7 @@ p {
 
 img {
   animation: idou 1s infinite;
-} */
+}  */
 
 /* ここまでコメントアウトでアニメーションを消す */
 
@@ -82,11 +85,11 @@ main {
 
 main img {
   max-width: 100%;
-  ;
+
 }
 
 .main {
-  animation: otyanomizu 10s infinite
+  animation: otyanomizu 10s infinite;
 }
 
 @keyframes otyanomizu {
@@ -101,7 +104,7 @@ main img {
 
 
 
-h2 {
+h1 {
   width: 60vw;
   height: 10vh;
   padding-top: 3px;
@@ -127,13 +130,13 @@ p {
 }
 
 .yoko {
-  display: block;
   display: flex;
+  justify-content: space-between;
 }
 
 .yoko img {
-  width: 46vw;
-  justify-content: space-between;
+  width: 30vw;
+
 }
 
 .hutozi {
@@ -186,17 +189,75 @@ p {
 }
 
 #rog {
-  filter: brightness(0);
+  /* filter: brightness(0); */
   background-color: transparent;
   position: absolute;
   top: 30vh;
   left: 15vw;
+  /* animation: hanten 20s linear; */
+}
+
+@keyframes hanten {
+  0% {
+    filter: brightness(0);
+  }
+
+  100% {
+    filter: brightness(100%);
+  }
 }
 
 header {
-  width: 100%;
+  width: 375px;
+  height: 667px;
+  background: url(../image/main.png) no-repeat bottom center/cover;
+  margin-bottom: 40px;
 }
 
-header image {
+
+
+
+.eigyoutime {
+  font-weight: bold;
+}
+
+.tanyao {
   width: 100%;
+  text-decoration: none;
+  text-align: end;
+}
+
+header p {
+  color: #fff;
+  animation: sinkansen 15s infinite linear;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+@keyframes sinkansen {
+  0% {
+    transform: translate(500px);
+    /* color: red; */
+  }
+
+  /* 20% {
+      color: blue;
+    }
+
+    40% {
+      color: yellow;
+    }
+
+    60% {
+      color: green;
+    }
+
+    80% {
+      color: purple;
+    }  */
+
+  100% {
+    transform: translate(-1100px);
+    /* color: red; */
+  }
 }
