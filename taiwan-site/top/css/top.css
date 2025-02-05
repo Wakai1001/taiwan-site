@@ -1,1 +1,12 @@
 @charset "UTF-8";
+
+/* common */
+body {
+  background-color: #f4f4f4;
+  max-width: 375px;
+}
+
+/* header */
+.logo_image {
+  display: none;
+}
