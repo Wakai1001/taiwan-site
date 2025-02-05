@@ -182,9 +182,9 @@ footer {
 }
 
 /* ロード画面 */
-body {
+/* body {
 
-  /* background-color: #007AB7; */
+  background-color: #007AB7;
   overflow: hidden;
 
 }
@@ -209,9 +209,9 @@ body {
     transform: scale(3);
   }
 
-  50% {
-    /* display: none; */
-    transform: scale(5);
+  50% { */
+/* display: none; */
+/* transform: scale(5);
   }
 
   100% {
@@ -220,4 +220,4 @@ body {
   }
 
 
-}
+} */
