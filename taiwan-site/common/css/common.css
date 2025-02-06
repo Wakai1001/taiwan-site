@@ -207,13 +207,15 @@ footer {
     transform: scale(3);
   }
 
-  50% { */
-/* display: none; */
-/* transform: scale(5);
+  50% { 
+display: none;
+transform: scale(5);
+transform: rotate(3000deg);
   }
 
   100% {
     transform: scale(15);
+    transform: rotate(-500deg);
     opacity: 1;
   }
 
