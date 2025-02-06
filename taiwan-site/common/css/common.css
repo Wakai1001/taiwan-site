@@ -195,14 +195,59 @@ footer {
 
 
 /* ロード画面 */
+
+
+.loading {
+  /*ローディング画面の縦横幅を画面いっぱいになるように指定*/
+  width: 100vw;
+  height: 100vh;
+  /*ローディング画面の表示位置を固定*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #1082ce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*ローディング画面を0.5秒かけて非表示にする*/
+  transition: all 0.5s linear;
+}
+
+/*ローディング画面を非表示にする*/
+.loading.loaded {
+  /*0.5秒かけてopacityを0にする*/
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading-text {
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.spinner {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 4px solid #FFF;
+  border-left-color: #000000;
+  /* アニメーションを1秒かけて実行 */
+  animation: yokohama 1s linear infinite;
+}
+
 /* body {
 
   background-color: #007AB7;
   overflow: hidden;
 
-}
+} */
 
-#uguisudani {
+/* #uguisudani {
   animation: yokohama 3s infinite linear;
   transform: scale(3);
   position: relative;
@@ -210,7 +255,7 @@ footer {
   left: 50vw;
 
 
-}
+} */
 
 @keyframes yokohama {
   0% {
@@ -222,10 +267,10 @@ footer {
     transform: scale(3);
   }
 
-  50% { 
-display: none;
-transform: scale(5);
-transform: rotate(3000deg);
+  50% {
+    display: none;
+    transform: scale(5);
+    transform: rotate(3000deg);
   }
 
   100% {
@@ -235,4 +280,4 @@ transform: rotate(3000deg);
   }
 
 
-} */
+}

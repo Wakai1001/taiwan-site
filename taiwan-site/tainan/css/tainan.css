@@ -1,14 +1,181 @@
 @charset "UTF-8";
 
-
+/* 全体 */
 html {
   overflow-x: hidden;
   width: 375px;
   font-family: "Zen Kaku Gothic New,sans-serif";
 }
 
+main {
+  margin: 0 8px;
+}
 
-/* ここから */
+.gazou {
+  width: 100%;
+}
+
+body {
+  text-align: center;
+}
+
+p {
+  font-size: 12px;
+}
+
+#rog {
+  /* filter: brightness(0); */
+  background-color: transparent;
+  position: absolute;
+  top: 30vh;
+  left: 15vw;
+  /* animation: hanten 20s linear; */
+}
+
+.sen {
+  display: block;
+  height: 1px;
+  width: 70vw;
+  background: black;
+  margin: 20px auto;
+}
+
+.ookime {
+  font-size: 24px;
+}
+
+.hutozi {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 40px 0 20px;
+}
+
+h1 {
+  width: 60vw;
+  height: 10vh;
+  padding-top: 3px;
+  margin-bottom: 40px;
+  font-size: 5vw;
+  font-weight: 400;
+  margin: 0 auto;
+  background: url(../image/waku.png) no-repeat bottom center/cover;
+}
+
+
+/* ヘッダー */
+
+.hero {
+  position: relative;
+}
+
+header {
+  max-width: 375px;
+  width: 100%;
+  height: 667px;
+  background: url(../image/main.png) no-repeat bottom center/cover;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+header img {
+  filter: drop-shadow(10px 5px 0px #000);
+}
+
+header p {
+  color: #fff;
+  /* animation: sinkansen 15s infinite linear;
+  white-space: nowrap; */
+  font-size: 12px;
+  position: absolute;
+  top: 215vh;
+  right: 5vw;
+  width: 73vw;
+  text-align: start;
+  font-weight: bold;
+}
+
+.tukuba {
+  font-size: 12px;
+
+}
+
+/* メイン */
+/* アトラクション */
+.eigyoutime {
+  font-weight: bold;
+}
+
+.haikei {
+  background-color: rgba(108, 196, 216, 0.2);
+  margin: 20px 0;
+  padding: 20px 18px;
+}
+
+.attraction {
+  margin: 0 40px;
+}
+
+.yoko {
+  display: flex;
+  justify-content: space-between;
+}
+
+.yoko img {
+  width: 43vw;
+
+}
+
+/* グルメ */
+
+.gourmet {
+  margin: 0 40px;
+  margin-bottom: 40px;
+}
+
+.tanyao {
+  width: 100%;
+  text-align: end;
+  display: block;
+  border: solid 3px orange;
+  width: 80px;
+  margin-left: auto;
+  padding: 5px;
+}
+
+.sankaku {
+  color: orange;
+}
+
+.yohaku {
+  margin: 12px 0;
+}
+
+.gourmet .ookime {
+  margin: 40px 0 8px;
+}
+
+/* ヒーリング */
+
+.hasu {
+  margin: 20px 0;
+}
+
+.pinhu {
+  margin-bottom: 12px;
+}
+
+.healing .ookime {
+  margin: 40px 0 20px;
+}
+
+.healing {
+  margin: 0 40px;
+}
+
+/* メイン */
+/* フッター */
+
+/* アニメーション */
 /* body{
  animation: nizisanzi 5s infinite linear;
 }
@@ -20,9 +187,6 @@ p {
 img {
   animation: idou 1s infinite;
 }  */
-
-/* ここまでコメントアウトでアニメーションを消す */
-
 @keyframes nizisanzi {
   0% {
     background-image: linear-gradient(90deg, rgba(243, 196, 170, 1), rgba(228, 81, 154, 1) 50%, rgba(77, 84, 224, 1));
@@ -58,10 +222,6 @@ img {
   }
 }
 
-
-
-
-
 @keyframes idou {
   10% {
     transform: translateX(100px)rotate(45deg);
@@ -76,196 +236,6 @@ img {
   }
 
 }
-
-body {
-  text-align: center;
-}
-
-main {
-  margin: 0 8px;
-}
-
-main img {
-  max-width: 100%;
-
-}
-
-.main {
-  animation: otyanomizu 10s infinite;
-}
-
-@keyframes otyanomizu {
-  0% {
-    filter: brightness(0%);
-  }
-
-  100% {
-    filter: brightness(1300%);
-  }
-}
-
-
-
-h1 {
-  width: 60vw;
-  height: 10vh;
-  padding-top: 3px;
-  margin-bottom: 40px;
-  font-size: 22px;
-  font-weight: 400;
-  margin: 0 auto;
-  background: url(../image/waku.png) no-repeat bottom center/cover;
-}
-
-.tukuba {
-  font-size: 12px;
-
-}
-
-
-p {
-  font-size: 12px;
-}
-
-.yoko {
-  display: flex;
-  justify-content: space-between;
-}
-
-.yoko img {
-  width: 38vw;
-
-}
-
-.hutozi {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 40px 0 20px;
-}
-
-.attraction {
-  margin: 0 40px;
-}
-
-.haikei {
-  background-color: rgba(108, 196, 216, 0.2);
-  margin: 20px 0;
-  padding: 20px 18px;
-}
-
-
-.gourmet {
-  margin: 0 40px;
-  margin-bottom: 40px;
-}
-
-.healing {
-  margin: 0 40px;
-}
-
-.ookime {
-  font-size: 24px;
-}
-
-.sen {
-  display: block;
-  height: 1px;
-  width: 70vw;
-  background: black;
-  margin: 20px auto;
-}
-
-.gourmet .ookime {
-  margin: 40px 0 8px;
-}
-
-.yohaku {
-  margin: 12px 0;
-}
-
-.pinhu {
-  margin-bottom: 12px;
-}
-
-.hasu {
-  margin: 20px 0;
-}
-
-.healing .ookime {
-  margin: 40px 0 20px;
-}
-
-.hero {
-  position: relative;
-}
-
-#rog {
-  /* filter: brightness(0); */
-  background-color: transparent;
-  position: absolute;
-  top: 30vh;
-  left: 15vw;
-  /* animation: hanten 20s linear; */
-}
-
-@keyframes hanten {
-  0% {
-    filter: brightness(0);
-  }
-
-  100% {
-    filter: brightness(100%);
-  }
-}
-
-header {
-  max-width: 375px;
-  width: 100%;
-  height: 667px;
-  background: url(../image/main.png) no-repeat bottom center/cover;
-  margin-bottom: 40px;
-  position: relative;
-}
-
-header p {
-  color: #fff;
-  /* animation: sinkansen 15s infinite linear;
-  white-space: nowrap; */
-  font-size: 12px;
-  position: absolute;
-  top: 215vh;
-  right: 5vw;
-  width: 73vw;
-  text-align: start;
-  font-weight: bold;
-}
-
-header img {
-  filter: drop-shadow(10px 5px 0px #000);
-}
-
-
-.eigyoutime {
-  font-weight: bold;
-}
-
-.tanyao {
-  width: 100%;
-  text-decoration: none;
-  text-align: end;
-  color: black;
-  display: block;
-  border: solid 3px orange;
-  width: 80px;
-  margin-left: auto;
-  padding: 5px;
-}
-
-.sankaku {
-  color: orange;
-}
-
-
 
 @keyframes sinkansen {
   0% {
@@ -292,5 +262,15 @@ header img {
   100% {
     transform: translate(-1100px);
     /* color: red; */
+  }
+}
+
+@keyframes hanten {
+  0% {
+    filter: brightness(0);
+  }
+
+  100% {
+    filter: brightness(100%);
   }
 }
