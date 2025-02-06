@@ -9,14 +9,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="common/css/common.css">
-  <link rel="stylesheet" href="top/css/">
+  <link rel="stylesheet" href="top/css/top.css">
   <title>TAIWAN</title>
 </head>
 
 <body>
   <header>
     <!-- ロゴ画像 -->
-    <h1><a href="#"><img src="common/image/logo.svg" alt="ロゴ画像(TAIWAN)" class="logo_image"></a></h1>
+    <h1 class="logo_image"><a href="#"><img src="common/image/logo.svg" alt="ロゴ画像(TAIWAN)"></a></h1>
     <!-- タイトル -->
     <h1 class="top_image"><img src="top/image/top_title.png" alt="トップ画像(TAIWAN)"></h1>
 
@@ -41,9 +41,10 @@
   <main>
     <section class="introduction">
       <div class="intro_top">
+        <img src="common/image/national_flag.svg" alt="台湾国旗" class="intro_flag">
         <h3>Formosa</h3>
         <h4>フォルモサ（麗しの島）</h4>
-        <img src="top/image/top_intro_img1.jpg" alt="フォルモサの紹介画像（朝）">
+        <img src="top/image/top_intro_img1.jpg" alt="フォルモサの紹介画像（朝）" class="intro_img">
       </div>
       <div class="intro_bottom">
         <p>フォルモサは、十六世紀にポルトガル人がエメラルド色の美しい台湾を見つけて発した賛嘆の言葉です。緑にあふれた台湾の美しい風景が、あなたを桃源郷の世界へといざなってくれるでしょう。</p>
@@ -60,47 +61,49 @@
       <img src="top/image/top_travel_map.png" alt="台湾の人気スポットのマップ">
     </section>
     <section class="event">
-      <h2>Event おすすめイベント</h2>
+      <h2>Event <span>おすすめイベント</span></h2>
       <div class="event1">
         <h3>台湾ランタンフェスティバル</h3>
         <img src="top/image/top_event_img1.jpg" alt="台湾ランタンフェスティバルの画像">
-        <p class="event_date"><span class="date_title">開催期間</span><br>春節　旧暦元日（2月24日～3月2日）</p>
+        <p class="date_title">開催期間</p>
+        <p class="event_date">春節　旧暦元日（2月24日～3月2日）</p>
 
-        <p>春節の風習として「天燈」と呼ばれる紙製のランタンに無病息災などの祈りを書き込み、火種を用いて熱気球と同じ原理で空に飛ばす儀式です。吉祥や邪気払いの意味があります。</p>
+        <p class="explanation">春節の風習として「天燈」と呼ばれる紙製のランタンに無病息災などの祈りを書き込み、火種を用いて熱気球と同じ原理で空に飛ばす儀式です。吉祥や邪気払いの意味があります。</p>
       </div>
       <div class="event2">
         <h3>台北最High新年城<br>カウントダウンパーティー</h3>
         <img src="top/image/top_event_img2.jpg" alt="台北最HIgh新年城カウントダウンパーティー">
-        <p class="event_date"><span class="date_title">開催期間</span><br>12月31日～1月1日</p>
-        <p>台北101では毎年、元旦0時から約3分間、ビルを覆いつくすように新年を祝う花火が舞い上がります。世界中から注目されるイベントの一つです。</p>
+        <p class="date_title">開催期間</p>
+        <p class="event_date">12月31日～1月1日</p>
+        <p class="explanation">台北101では毎年、元旦0時から約3分間、ビルを覆いつくすように新年を祝う花火が舞い上がります。世界中から注目されるイベントの一つです。</p>
       </div>
     </section>
     <section class="info">
       <h2>台湾基本情報</h2>
       <dl>
-        <dt>国名</dt>
+        <dt class="info_title">国名</dt>
         <dd>中華民国・台湾</dd>
-        <dt>首都</dt>
+        <dt class="info_title">首都</dt>
         <dd>台北</dd>
-        <dt>人口</dt>
+        <dt class="info_title">人口</dt>
         <dd>約2,300万人</dd>
-        <dt>面積</dt>
+        <dt class="info_title">面積</dt>
         <dd>約3万6,000km&sup2;</dd>
-        <dt>人種・民族</dt>
+        <dt class="info_title">人種・民族</dt>
         <dd>漢民族、先住民</dd>
-        <dt>宗教</dt>
+        <dt class="info_title">宗教</dt>
         <dd>仏教、道教、キリスト教、その他</dd>
-        <dt>言語</dt>
+        <dt class="info_title">言語</dt>
         <dd>北京語、台湾語</dd>
-        <dt>通貨</dt>
+        <dt class="info_title">通貨</dt>
         <dd>元（ニュー台湾ドル）</dd>
-        <dt>時差</dt>
+        <dt class="info_title">時差</dt>
         <dd>1時間</dd>
-        <dt>台湾の気候・服装</dt><br>
-        <dd>亜熱帯に属し一年を通して温暖な台湾。しかし北回帰線から南は熱帯で熱く、北部は大陸性気候の影響を受けて冷え込むこともあります。地域差を考慮して服装を準備しましょう。</dd>
-        <dt>台湾の祝祭日</dt><br>
+        <dt class="info_title">台湾の気候・服装</dt><br>
+        <dd class="left_space">亜熱帯に属し一年を通して温暖な台湾。しかし北回帰線から南は熱帯で熱く、北部は大陸性気候の影響を受けて冷え込むこともあります。地域差を考慮して服装を準備しましょう。</dd>
+        <dt class="info_title">台湾の祝祭日</dt><br>
         <dd>
-          <dl>
+          <dl class="holiday">
             <dt>正月</dt>
             <dd>1月1日</dd>
             <dt>端午節</dt>
