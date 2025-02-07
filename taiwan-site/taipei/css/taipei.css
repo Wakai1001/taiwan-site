@@ -250,23 +250,29 @@ padding: 8px;
   bottom: 0;
 }
 
+.text-container{
+  margin: 40px;
+}
+
 .text-container p {
-  margin: 0;
+  /* margin: auto; */
   line-height: 19.2px;
   min-height: 95px;
   /* height: 95px; */
+  /* align-items: center; */
 }
 /* 画像です */
 .nightmarket1{
   width: 78.6vw;
-  margin:  20px 40px;
+  margin: 20px 40px;
+  /* margin:  20px 40px; */
 align-items: center;
-/* margin: auto; */
+
 }
 /* 画像です */
 .nightmarket2{
   width: 78.6vw;
-  margin:  20px 40px;
+  margin:  20px  40px;
 align-items: center;
 }
 
@@ -291,7 +297,7 @@ align-items: center;
   /* border: none; */
   /* background: #ccc; */
   cursor: pointer;
-  margin: 20px 0;
+  /* margin: 10px ; */
   gap: 12px;
 }
 .modalBtn{
@@ -304,10 +310,10 @@ align-items: center;
 }
 
 .btnflame{
-  width: 131px;
-  height: 57px;
+  /* width: 34vw; */
+  /* height: 57px; */
   /* margin:12px ; */
-  /* gap: 12px; */
+  gap: 12px;
 }
 
 /* sction Access */
