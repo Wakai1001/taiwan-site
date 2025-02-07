@@ -7,30 +7,29 @@ html {
   font-family: "Zen Kaku Gothic New,sans-serif";
 }
 
+body {
+  text-align: center;
+  width: 100vw;
+  background-color: #f4f4f4;
+}
+
 main {
   margin: 0 8px;
+
+}
+
+
+
+
+
+p {
+  font-size: 12px;
 }
 
 .gazou {
   width: 100%;
 }
 
-body {
-  text-align: center;
-}
-
-p {
-  font-size: 12px;
-}
-
-#rog {
-  /* filter: brightness(0); */
-  background-color: transparent;
-  position: absolute;
-  top: 30vh;
-  left: 15vw;
-  /* animation: hanten 20s linear; */
-}
 
 .sen {
   display: block;
@@ -51,35 +50,42 @@ p {
 }
 
 h1 {
-  width: 60vw;
+  /* width: 60vw;
   height: 10vh;
   padding-top: 3px;
   margin-bottom: 40px;
   font-size: 5vw;
   font-weight: 400;
-  margin: 0 auto;
+  margin: 0 auto; */
   background: url(../image/waku.png) no-repeat bottom center/cover;
+  /* padding-top: 20px; */
+  /* padding: 20px 56px 0; */
+  /* min-width: 220px; */
+  width: 60vw;
+  /* height: 40px; */
+  font-size: 5vw;
+  height: 7vw;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  /* display: block; */
+  /* margin-top: 40px; */
+  padding-top: 3px;
+  margin-top: 40px;
+  max-width: 400px;
 }
 
 
 /* ヘッダー */
 
-.hero {
-  position: relative;
-}
-
 header {
-  max-width: 375px;
-  width: 100%;
+  /* max-width: 375px; */
+  width: 100vw;
   height: 667px;
   background: url(../image/main.png) no-repeat bottom center/cover;
-  margin-bottom: 40px;
+  /* margin-bottom: 40  px; */
   position: relative;
 }
 
-header img {
-  filter: drop-shadow(10px 5px 0px #000);
-}
 
 header p {
   color: #fff;
@@ -87,7 +93,7 @@ header p {
   white-space: nowrap; */
   font-size: 12px;
   position: absolute;
-  top: 215vh;
+  bottom: 0;
   right: 5vw;
   width: 73vw;
   text-align: start;
@@ -99,8 +105,25 @@ header p {
 
 }
 
+#rog {
+  /* filter: brightness(0); */
+  /* background-color: transparent; */
+  /* position: absolute; */
+  padding-top: 170px;
+  max-width: 199px;
+  width: 40vw;
+  top: 30vh;
+  left: 15vw;
+  filter: drop-shadow(10px 5px 0px #000);
+  /* animation: hanten 20s linear; */
+}
+
 /* メイン */
 /* アトラクション */
+.yohaku40 {
+  margin: 0 40px;
+}
+
 .eigyoutime {
   font-weight: bold;
 }
@@ -109,37 +132,47 @@ header p {
   background-color: rgba(108, 196, 216, 0.2);
   margin: 20px 0;
   padding: 20px 18px;
+  text-align: start;
 }
 
-.attraction {
-  margin: 0 40px;
-}
+
 
 .yoko {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .yoko img {
-  width: 43vw;
+  width: 36vw;
+  min-width: 125px;
 
 }
+
+#naka {
+  text-align: center;
+}
+
 
 /* グルメ */
 
 .gourmet {
-  margin: 0 40px;
   margin-bottom: 40px;
 }
 
 .tanyao {
-  width: 100%;
   text-align: end;
   display: block;
   border: solid 3px orange;
   width: 80px;
   margin-left: auto;
   padding: 5px;
+  color: #000;
+  display: flex;
+}
+
+.tanyao p {
+  color: #000;
 }
 
 .sankaku {
@@ -156,7 +189,11 @@ header p {
 
 /* ヒーリング */
 
-.hasu {
+.yohaku20 {
+  margin: 0 20px;
+}
+
+.healing p {
   margin: 20px 0;
 }
 
@@ -168,9 +205,8 @@ header p {
   margin: 40px 0 20px;
 }
 
-.healing {
-  margin: 0 40px;
-}
+
+
 
 /* メイン */
 /* フッター */
@@ -273,4 +309,3 @@ img {
   100% {
     filter: brightness(100%);
   }
-}
