@@ -3,7 +3,6 @@
 /* common */
 body {
   background-color: #f4f4f4;
-  max-width: 375px;
 }
 
 section {
@@ -34,9 +33,8 @@ h2 span {
 
 /* header */
 header {
-  height: 100vh;
-  background: url(../image/top_back_image.jpg) no-repeat top;
-  background-size: 100% auto;
+  height: 667px;
+  background: url(../image/top_back_image.jpg) no-repeat center/cover;
 }
 
 .logo_image {
@@ -209,7 +207,7 @@ header {
 }
 
 /* pcデザイン */
-@media screen and (min-width:375px) {
+@media screen and (min-width:768px) {
 
   /* common */
   body {
@@ -218,8 +216,8 @@ header {
 
   /* header */
   header {
-    background: url("../image/pctop_back_image.jpg") no-repeat top;
-    background-size: 100% auto;
+    background: url("../image/pctop_back_image.jpg") no-repeat top/cover;
+    height: 768px;
   }
 
 }
