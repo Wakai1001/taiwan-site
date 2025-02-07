@@ -4,9 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="common/css/reset.css">
+
+  
   <link rel="stylesheet" href="css/taipei.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
 
+
+  
   <title>Taipei</title>
   <!-- <img src="image/taipei_top.png" alt="topの台北の画像"> -->
 </head>
@@ -17,6 +24,27 @@
 
 
 <header>
+
+
+  <!-- ドロワーメニュー -->
+    <!-- global menu スマホ用nav-->
+    <!-- <nav class="g_menu"> -->
+      <!-- menu open -->
+      <!-- <input type="checkbox" id="menu_btn" class="menu_btn"> -->
+      <!-- icon -->
+      <!-- <label class="menu_icon" for="menu_btn"> -->
+        <!-- border -->
+        <!-- <span class="navicon"></span> -->
+      <!-- </label> -->
+      <!-- <ul class="menu"> -->
+        <!-- ！！！！！！！！！！！！！！！！！！ -->
+        <!-- 自分のページのみ先頭の「../」消して下さい -->
+        <!-- <li><a href="../index.html">TOP</a></li>
+        <li><a href="../taipei/index.html">台北</a></li>
+        <li><a href="../taichung/index.html">台中</a></li>
+        <li><a href="../tainan/index.html">台南</a></li>
+      </ul> -->
+    <!-- </nav> -->
   <img src="image/taipei_top2.png" alt="台北の文字" class="taipei_top2">
   <!-- 右下の文です -->
   <p>
@@ -29,23 +57,133 @@
   <section class="Attraction">
     <h2 class="heading">Attraction <span class="sub">観光名所</span></h2>
     <p class="subtitle">九份</p>
-<img src="image/kyufun.png" alt="九份の画像" class="">
+<img src="image/kyufun.png" alt="九份の画像" class="kyufun">
 <!-- 背景青です -->
  <div class="blue">
       <p class="paragraph">細い路地の階段に沿って建つ古い館に、提灯が灯るノスタルジックな風景。1989年、映画「非情城市」の舞台になったことをきっかけに再び注目を集めると共に、日本では、九份の町中にある建物が2001年公開の映画「千と千尋の神隠し」に登場する湯婆婆の湯屋を彷彿させるとして話題に。日本統治時代に建てられた古い建物が残ることから、どこか懐かしい雰囲気が漂う町並みは日本人の琴線に触れ、今や台湾で行きたい観光地ナンバーワンとなりました。</p>
     </div>
       <div class="imagebox">
-        <img src="image/kyufun_sub1.png" alt="九份のサブ画像１">
-        <img src="image/kyufun_sub2.png" alt="九份のサブ画像２">
+        <img class="kyufun_box1"  src="image/kyufun_sub1.png" alt="九份のサブ画像１">
+        <img  class="kyufun_box1" src="image/kyufun_sub2.png" alt="九份のサブ画像２">
       </div>
       <div class="blue2">
       <p class="text2"> 幻想的な夕暮れがねらい目</p>
-      <p>15:00～19:00</p>
+      <p class="text3">15:00～19:00</p>
     </div>
+     <!-- 台北101の上の線 -->
+  <div class="border"></div>
+  <p class="subtitle">台北101</p>
+
+<img class="taipei101"  src="image/taipei101.png" alt="">
+
+<div class="blue3">
+  <p class="text4"> 高さは509.2m、地上101階あるのが名前の由来です。エレベーターは東芝エレベータ製で、毎分1,010メートル（時速60.6キロメートル）の速さで上昇でき、地上1階から展望台のある89階（地上382.2メートル）まで39秒で到達します。展望台、オフィス、レストラン、ショッピングモールなどが入る台湾を代表するランドマークワーで、有名なカウントダウンパーティーをはじめ節目に合わせたライトアップも行っています。一度は行っておきたい名所です。</p>
+</div>
+<div class="imagebox">
+<img class="kyufun_box1" src="image/taipei101_sub1.png" alt="">
+<img class="kyufun_box1" src="image/taipei101_sub2.png" alt="">
+</div>
+
+<div class="blue2">
+  <p class="text2"> 展望台営業時間帯</p>
+  <p class="text3">11:00～19:00</p>
+</div>
   </section>
-  <section class="NightMarket"></section>
-  <section class="Access"></section>
-<script src="js/taipei.js"></script>
+
+  <section class="NightMarket">
+    <h2 class="heading">NightMarket <span class="sub">夜一</span></h2>
+
+  <div class="text-container">
+    <p>台北観光の夜の目玉と言えば、なんと言っても夜市（ナイトマーケット）があげられます。 毎日市内の各所で開かれており、夕方から夜遅くまで多くの人々で賑わっています。 絶品Ｂ級グルメ・小吃からファッション、ゲームまで様々なお店が集まっています。</p>
+</div>
+<img class="nightmarket1"  src="image/nightmarket1.png" alt="">
+
+<div class="modalBtn">
+  <button class="btn" onclick="openModal()">
+    <img  class="btnflame"   src="image/btn_flame.png" alt="">
+    
+  </button>
+  <button class="btn" onclick="openModal()">
+    <img class="btnflame" src="image/btn_flame.png" alt="">
+  </button><button class="btn" onclick="openModal()">
+    <img class="btnflame"  src="image/btn_flame.png" alt="">
+  </button><button class="btn" onclick="openModal()">
+    <img class="btnflame"  src="image/btn_flame.png" alt="">
+  </button>
+</div>
+
+<img class="nightmarket2" src="image/nightmarket2.png" alt="">
+  </section>
+
+  <section class="Access">
+    <h2 class="heading">Access <span class="sub">交通手段</span></h2>
+<div class="access_sub">
+  <p class="access_subtext">各地へのアクセスにご利用ください</p>
+</div>
+<img class="access"  src="image/access.png" alt="">
+
+<div class="subwayText">
+<p class="subway">■地下鉄　<span class="textaria">(初乗り20元)</span></p>
+<p class="textaria">
+  乗り方は日本の地下鉄とほぼ同じ。改札を通る時に、切符やICカードをタッチします。台北MRTは全て各駅停車です。
+</p>
+</div>
+<div class="subwayText">
+  <p class="subway">■バス <span class="textaria">(初乗り15元)</span></p>
+  <p class="textaria">
+    バス停には、ポールが立っており、大通りでは車道の真ん中のバスレーン沿いにあります。乗りたい場合、バスに向かって手を挙げて知らせます。運賃を現金で払う場合は、運転手に行先を告げてから運賃箱にお金を入れます。
+  </p>
+</div >
+<div class="subwayText">
+<p class="subway">■タクシー <span class="textaria">(初乗り70元)</span></p>
+<p class="textaria">
+  市内の移動で気軽に使うことが出来ます。MRTなどが運行していない真夜中や早朝の移動にも便利です。新幹線の駅や有名観光地などにはタクシー乗り場が準備されているので、そこから乗りましょう。ホテルではフロントで呼んでもらうこともできます。
+</p>
+</div>
+<div class="subwayText">
+  <p class="subway">■悠遊カード <span class="textaria">(販売額100元)</span ></p>
+  <img class="benesse" src="image/benesse.png" alt="">
+  <p class="textaria">
+    現金をチャージして使うことが出来る交通系ICカードです。MRT・バス・台湾鉄路などで使用することができ、運賃が割引になります。台北旅行の際に手に入れておくと便利です。
+  </p>
+</div>
+  </section>
+
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <img src="image/market_modal.png" alt="寧夏路夜市">
+
+            <img src="image/close_btn.svg" alt="閉じる" class="close" onclick="closeModal()">
+        </div>
+    </div>
+   
+    <script src="js/taipei.js"></script>
+
+    <footer>
+      <div class="center">
+        <img src="../common/image/national_flag.svg" alt="台湾国旗" class="flag">
+      </div>
+      <ul class="f_nav">
+        <!-- ！！！！！！！！！！！！！！！！！！ -->
+        <!-- 自分のページのみ先頭の「../」消して下さい -->
+        <li><a href="index.html">TOP</a></li>
+        <li><a href="taipei/index.html">台北</a></li>
+        <li><a href="taichung/index.html">台中</a></li>
+        <li><a href="tainan/index.html">台南</a></li>
+        <li><a href="#">当サイトのポリシー</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+  
+      <ul class="sns_logo">
+        <li><a href="#"><img src="../common/image/facebook_logo.png" alt="facebookロゴ"></a></li>
+        <li><a href="#"><img src="../common/image/instagram_logo.png" alt="instagramロゴ"></a></li>
+        <li><a href="#"><img src="../common/image/x_logo.png" alt="Xロゴ"></a></li>
+      </ul>
+  
+      <p class="copyright">
+        Copyright (C) TAIWAN Traveler</p>
+    </footer>
 </body>
 </main>
 </html>
