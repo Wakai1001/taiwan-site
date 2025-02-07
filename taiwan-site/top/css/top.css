@@ -2,8 +2,7 @@
 
 /* common */
 body {
-  /* background-color: #f4f4f4; */
-  max-width: 375px;
+  background-color: #f4f4f4;
 }
 
 section {
@@ -34,7 +33,7 @@ h2 span {
 
 /* header */
 header {
-  height: 100vh;
+  height: 667px;
   background: url(../image/top_back_image.jpg) no-repeat center/cover;
 }
 
@@ -205,4 +204,20 @@ header {
 .holiday dt {
   margin-left: 12px;
   width: 72px;
+}
+
+/* pcデザイン */
+@media screen and (min-width:768px) {
+
+  /* common */
+  body {
+    max-width: 1366px;
+  }
+
+  /* header */
+  header {
+    background: url("../image/pctop_back_image.jpg") no-repeat top/cover;
+    height: 768px;
+  }
+
 }
