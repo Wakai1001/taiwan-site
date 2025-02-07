@@ -181,10 +181,15 @@ header p {
 
 .yohaku {
   margin: 12px 0;
+  text-align: start;
 }
 
 .gourmet .ookime {
   margin: 40px 0 8px;
+}
+
+#gurume {
+  text-align: start;
 }
 
 /* ヒーリング */
@@ -205,7 +210,14 @@ header p {
   margin: 40px 0 20px;
 }
 
+.hasu {
+  text-align: start;
+}
 
+#haba70 {
+  width: 70vw;
+  margin: 0 auto;
+}
 
 
 /* メイン */
@@ -309,3 +321,135 @@ img {
   100% {
     filter: brightness(100%);
   }
+
+}
+
+/* メディアクエリ */
+
+@media screen and (min-width:768px) {
+
+
+  h1 {
+    font-size: clamp(22px, 5vw, 44px);
+    width: 70vw;
+    height: 5vw;
+    margin: 0 auto 0 40px;
+    text-align: center;
+    padding-top: 3px;
+    margin-top: 40px;
+    max-width: 560px;
+    font-weight: 400;
+  }
+
+  .tukuba {
+    font-size: 22px;
+  }
+
+  .hutozi {
+    font-size: 36px;
+    text-align: start;
+  }
+
+  header {
+    background: url(../image/main.png) no-repeat center center/cover;
+  }
+
+  header p {
+    font-size: 15px;
+    position: absolute;
+    bottom: 2vw;
+    right: 10vw;
+    width: 28vw;
+  }
+
+  #rog {
+    padding-top: 130px;
+    max-width: 230px;
+    width: 40vw;
+    position: relative;
+    top: -5vh;
+    left: -15vw;
+    filter: drop-shadow(10px 5px 0px #000);
+  }
+
+  .sabazusi {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 320px 177px;
+    grid-auto-flow: row;
+    grid-auto-flow: column;
+
+  }
+
+  #riti {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    object-fit: cover;
+    height: 320px;
+  }
+
+  #ippatu {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 40px 10px;
+    margin: 10px 20px;
+    font-size: 20px;
+    align-self: center;
+  }
+
+  #simesaba {
+
+    display: none;
+  }
+
+  #isikawa {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 50px 20px;
+    font-size: 20px;
+    align-self: center;
+  }
+
+  #migiake {
+    margin-right: 10px;
+  }
+
+  .yoko img {
+    height: auto;
+    object-fit: fill;
+    object-position: 0 100%;
+  }
+
+
+
+  .jojoen {
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    object-fit: cover;
+    height: 177px;
+    margin-top: 10px;
+  }
+
+  .jojoen img {
+    object-fit: cover;
+    max-width: 278px;
+    width: 25vw;
+    grid-auto-flow: row;
+    grid-auto-flow: column;
+  }
+
+  #rokomoko {
+    padding-right: 5px;
+  }
+
+
+}
+
+
+@media screen and (max-width:767px) {
+  .jojoen {
+    display: none;
+  }
+
+}
