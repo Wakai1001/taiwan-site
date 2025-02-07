@@ -54,6 +54,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  z-index: 99;
 }
 
 .sns_logo li:not(:first-of-type) {
@@ -93,12 +94,16 @@ footer {
 .menu_icon {
   /* 右上に絶対配置 */
   position: absolute;
-  right: 12px;
-  top: 20px;
-  height: 20px;
-  padding-top: 5px;
+  right: 8px;
+  top: 10px;
+  height: 25px;
+  padding-right: 8.5px;
+  padding-left: 8.5px;
+  padding-top: 23px;
+  border-radius: 50%;
   /* ポインターの形状 指 */
   cursor: pointer;
+  background-color: #000000B3;
 }
 
 /* span 要素 中央の線作成 */
@@ -119,13 +124,14 @@ footer {
 .navicon::before,
 .navicon::after {
   content: "";
-  width: 100%;
+  width: 80%;
   height: 100%;
   background: #fff;
   /* 基準要素 span.navicon に対して絶対配置 */
   position: absolute;
   /* 三本線と X の切替えアニメーション 速く始まりゆっくり終わる */
   transition: all .4s ease-out;
+  left: 3px;
 }
 
 /* 下の線のみ */
@@ -149,28 +155,36 @@ footer {
   /* 最大の高さ */
   max-height: 0px;
   /* 非表示の際のアニメーション */
-  transition: max-height 0.6s;
+  transition: max-height 1.5s;
+
 }
 
 /* 1 つ目の li 要素 */
 .menu li:first-of-type {
-  padding-top: 56px;
+  padding-top: 120px;
+}
+
+.menu li:last-of-type {
+  margin-bottom: 100vh;
 }
 
 /* a 要素 */
 .menu a {
   display: block;
-  padding: 24px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 16px 20px;
 }
 
 /* ↓チェックボックスが ON の場合 */
 /* 非表示にしていた ul.menu を表示 */
 .menu_btn:checked~.menu {
-  max-height: 375px;
+  max-height: 100vh;
   /* 元 0px */
   /* 表示の際のアニメーション */
-  transition: max-height 0.6s;
+  transition: max-height 1.5s;
 }
+
 
 /* 中央の線を非表示 */
 .menu_btn:checked~.menu_icon .navicon {
