@@ -732,6 +732,14 @@ footer{
     display: none;
   }
 
+  #simokitazawa {
+    margin-bottom: 40px;
+  }
+
+  #asakusa {
+    margin-bottom: 100px;
+  }
+
   #rasya {
     font-size: clamp(22px, 5vw, 44px);
     width: 70vw;
@@ -744,14 +752,29 @@ footer{
     font-weight: 400;
   }
 
+
+  .sankaku {
+    line-height: 2;
+  }
+
   .sen {
     width: 40vw;
     background-color: rebeccapurple;
     height: 2px;
   }
 
+  .gourmet p {
+    font-size: 20px;
+  }
+
+  .tanyao {
+    width: 120px;
+    line-height: 1.5;
+  }
+
   #dai1 {
     display: flex;
+    margin-top: auto;
   }
 
   #dai2 {
@@ -803,7 +826,35 @@ footer{
     width: 70vw;
   }
 
+  #siba {
+    font-size: 36px;
+  }
 
+  #kawazu {
+    font-size: 36px;
+  }
+
+  #pao {
+    font-size: 36px;
+  }
+
+  #nikumesi {
+    font-size: 36px;
+  }
+
+  .tanyao {
+    margin-top: 50px;
+
+  }
+
+  .healing {
+    margin-top: 200px;
+  }
+
+  .pinhu {
+    padding-top: 51px;
+    padding-left: 20px;
+  }
 
 
 
