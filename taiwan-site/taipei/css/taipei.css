@@ -15,6 +15,7 @@ body {
 /* width100%の方がいいと思う */
 header {
   background: url(../image/taipei_top.png) no-repeat top center/cover;
+  /* max-width: 375px; */
   width: 100%;
   height: 177.86vw;
   /* padding: 2.133vw 3.2vw; */
@@ -35,7 +36,7 @@ header {
   margin: auto;
   /* padding-top: 120px; */
   /* max-width: 199px; */
-  padding:  32vw 23.4vw 0 ;
+  padding:  32vw 0vw 0 ;
 }
 
 header p {
@@ -212,6 +213,14 @@ padding: 8px;
   }
 
 
+  .NightMarket {
+    /* max-width: 295px; */
+    /* height: 1740px; */
+    margin: auto 40px;
+    width: 78.6vw;
+  }
+
+
   /* NightMarket 夜一 */
 .text-container {
   width: 78.67vw; 
@@ -251,7 +260,7 @@ padding: 8px;
 }
 
 .text-container{
-  margin: 40px;
+  margin: 40px auto 20px;
 }
 
 .text-container p {
@@ -264,15 +273,15 @@ padding: 8px;
 /* 画像です */
 .nightmarket1{
   width: 78.6vw;
-  margin: 20px 40px;
-  /* margin:  20px 40px; */
+  /* margin:  auto; */
+  margin:  20px auto;
 align-items: center;
 
 }
 /* 画像です */
 .nightmarket2{
   width: 78.6vw;
-  margin:  20px  40px;
+  margin:  20px  auto;
 align-items: center;
 }
 
@@ -328,10 +337,12 @@ row-gap: 3.2vw;
 
 /* sction Access */
 .Access{
-  margin: 40px;
-  margin-top: 60px;
+  margin: auto 40px;
+  width: 78.6vw;
+  margin-top: 40px;
   /* text-align: center; */
 }
+
 /* 各地へのアクセスにご利用ください */
 .access_subtext{
   margin: 0 auto 8px;
