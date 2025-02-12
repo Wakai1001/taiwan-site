@@ -4,11 +4,238 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
 
-<body>
-<script src="js/taipei.js"></script>
-</body>
+  <link rel="stylesheet" href="common/css/reset.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="css/taipei.css">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
+
+
+  <title>Taipei</title>
+</head>
+<main>
+
+  <body>
+
+    <!-- background urlに台北デカ文字画像入れて右下に文字（後で作ってくれたロゴとハンバーガー挿入） -->
+
+
+    <header>
+
+
+      <!-- ドロワーメニュー -->
+      <!-- global menu スマホ用nav-->
+      <!-- <nav class="g_menu"> -->
+      <!-- menu open -->
+      <!-- <input type="checkbox" id="menu_btn" class="menu_btn"> -->
+      <!-- icon -->
+      <!-- <label class="menu_icon" for="menu_btn"> -->
+      <!-- border -->
+      <!-- <span class="navicon"></span> -->
+      <!-- </label> -->
+      <!-- <ul class="menu"> -->
+      <!-- ！！！！！！！！！！！！！！！！！！ -->
+      <!-- 自分のページのみ先頭の「../」消して下さい -->
+      <!-- <li><a href="../index.html">TOP</a></li>
+        <li><a href="../taipei/index.html">台北</a></li>
+        <li><a href="../taichung/index.html">台中</a></li>
+        <li><a href="../tainan/index.html">台南</a></li>
+      </ul> -->
+      <!-- </nav> -->
+      <img src="image/taipei_top2.png" alt="台北の文字" class="taipei_top2">
+      <!-- 右下の文です -->
+      <p>
+        台北市は台湾の中心地です。活気にあふれる街台北では、さまざまな建物や台北を生きる人々の美しい風景を見ることができます。
+      </p>
+    </header>
+
+
+    <!-- 左上にパンくず追加する予定 -->
+    <section class="Attraction">
+      <h2 class="heading">Attraction <span class="sub">観光名所</span></h2>
+      <p class="subtitle">九份</p>
+      <img src="image/kyufun.png" alt="九份の画像" class="kyufun">
+      <!-- 背景青です -->
+      <div class="blue">
+        <p class="paragraph">
+          細い路地の階段に沿って建つ古い館に、提灯が灯るノスタルジックな風景。1989年、映画「非情城市」の舞台になったことをきっかけに再び注目を集めると共に、日本では、九份の町中にある建物が2001年公開の映画「千と千尋の神隠し」に登場する湯婆婆の湯屋を彷彿させるとして話題に。日本統治時代に建てられた古い建物が残ることから、どこか懐かしい雰囲気が漂う町並みは日本人の琴線に触れ、今や台湾で行きたい観光地ナンバーワンとなりました。
+        </p>
+      </div>
+      <div class="imagebox">
+        <img class="kyufun_box1" src="image/kyufun_sub1.png" alt="九份のサブ画像１">
+        <img class="kyufun_box1" src="image/kyufun_sub2.png" alt="九份のサブ画像２">
+      </div>
+      <div class="blue2">
+        <p class="text2"> 幻想的な夕暮れがねらい目</p>
+        <p class="text3">15:00～19:00</p>
+      </div>
+      <!-- 台北101の上の線 -->
+      <div class="border"></div>
+      <p class="subtitle">台北101</p>
+
+      <img class="taipei101" src="image/taipei101.png" alt="">
+
+      <div class="blue3">
+        <p class="text4">
+          高さは509.2m、地上101階あるのが名前の由来です。エレベーターは東芝エレベータ製で、毎分1,010メートル（時速60.6キロメートル）の速さで上昇でき、地上1階から展望台のある89階（地上382.2メートル）まで39秒で到達します。展望台、オフィス、レストラン、ショッピングモールなどが入る台湾を代表するランドマークワーで、有名なカウントダウンパーティーをはじめ節目に合わせたライトアップも行っています。一度は行っておきたい名所です。
+        </p>
+      </div>
+      <div class="imagebox">
+        <img class="kyufun_box1" src="image/taipei101_sub1.png" alt="">
+        <img class="kyufun_box1" src="image/taipei101_sub2.png" alt="">
+      </div>
+
+      <div class="blue2">
+        <p class="text2"> 展望台営業時間帯</p>
+        <p class="text3">11:00～19:00</p>
+      </div>
+    </section>
+
+    <section class="NightMarket">
+      <h2 class="heading">NightMarket <span class="sub">夜一</span></h2>
+
+      <div class="text-container">
+        <p>台北観光の夜の目玉と言えば、なんと言っても夜市（ナイトマーケット）があげられます。 毎日市内の各所で開かれており、夕方から夜遅くまで多くの人々で賑わっています。
+          絶品Ｂ級グルメ・小吃からファッション、ゲームまで様々なお店が集まっています。</p>
+      </div>
+      <img class="nightmarket1" src="image/nightmarket1.png" alt="">
+
+      <div class="modalBtn">
+        <button class="btn" onclick="openModal()">
+          <img class="btnflame" src="image/nightmarketBtn1.png" alt="">
+        </button>
+        <button class="btn" onclick="openModal()">
+          <img class="btnflame" src="image/nightmarketBtn2.png" alt="">
+        </button>
+        <button class="btn" onclick="openModal()">
+          <img class="btnflame" src="image/nightmarketBtn3.png" alt="">
+        </button>
+        <button class="btn" onclick="openModal()">
+          <img class="btnflame" src="image/nightmarketBtn4.png" alt="">
+        </button>
+      </div>
+
+      <img class="nightmarket2" src="image/nightmarket2.png" alt="">
+    </section>
+
+    <section class="Access">
+      <h2 class="heading">Access <span class="sub">交通手段</span></h2>
+      <div class="access_sub">
+        <p class="access_subtext">各地へのアクセスにご利用ください</p>
+      </div>
+      <img class="access" src="image/access.png" alt="">
+
+      <div class="subwayText">
+        <p class="subway">■地下鉄　<span class="textaria">(初乗り20元)</span></p>
+        <p class="textaria">
+          乗り方は日本の地下鉄とほぼ同じ。改札を通る時に、切符やICカードをタッチします。台北MRTは全て各駅停車です。
+        </p>
+      </div>
+      <div class="subwayText">
+        <p class="subway">■バス <span class="textaria">(初乗り15元)</span></p>
+        <p class="textaria">
+          バス停には、ポールが立っており、大通りでは車道の真ん中のバスレーン沿いにあります。乗りたい場合、バスに向かって手を挙げて知らせます。運賃を現金で払う場合は、運転手に行先を告げてから運賃箱にお金を入れます。
+        </p>
+      </div>
+      <div class="subwayText">
+        <p class="subway">■タクシー <span class="textaria">(初乗り70元)</span></p>
+        <p class="textaria">
+          市内の移動で気軽に使うことが出来ます。MRTなどが運行していない真夜中や早朝の移動にも便利です。新幹線の駅や有名観光地などにはタクシー乗り場が準備されているので、そこから乗りましょう。ホテルではフロントで呼んでもらうこともできます。
+        </p>
+      </div>
+      <div class="subwayText">
+        <p class="subway">■悠遊カード <span class="textaria">(販売額100元)</span></p>
+        <img class="benesse" src="image/benesse.png" alt="">
+        <p class="textaria">
+          現金をチャージして使うことが出来る交通系ICカードです。MRT・バス・台湾鉄路などで使用することができ、運賃が割引になります。台北旅行の際に手に入れておくと便利です。
+        </p>
+      </div>
+    </section>
+
+    <!-- モーダルウインドウ -->
+    <div class="modal" id="modal">
+      <!-- モーダル左上 -->
+      <div class="modal-content">
+        <img class="close_btn" src="image/close_btn.svg" alt="閉じる" onclick="closeModal()">
+        <p class="modalTitle">寧夏夜市</p>
+        <img class="market_modal1" src="image/market_modal.png" alt="寧夏路夜市">
+        <p class="modalText">
+          寧夏路夜市は台湾伝統の屋台料理やB級グルメがメインの夜市です。特に大同区の圓環付近には懐かしいグルメがたくさん集まっているので、思う存分味わいましょう。また、ここの夜市は歩道と車道が分かれているので、食事やショッピングに便利です。食の夜市とも言われる寧夏路夜市には毎日、大勢の人々が訪れています。
+        </p>
+        <p class="modalText2">営業時間：17:00 〜 25:00</p>
+      </div>
+    </div>
+    <!-- モーダル右上 -->
+    <div class="modal2" id="modal2">
+      <div class="modal-content2">
+        <img class="close_btn" src="image/close_btn.svg" alt="閉じる" onclick="closeModal()">
+        <p class="modalTitle">銀河街観光夜一</p>
+        <img class="market_modal1" src="image/market_modal2.png" alt="銀河街観光夜一">
+
+        <p class="modalText">
+          饒河街観光夜市は、屋台料理から雑貨や生活用品も扱う夜市です。手ごろな値段が魅力的で、多くの人々で賑わいます。最も観光客に人気があるのは「藥燉排骨」「胡椒餅」「水煎包」。行列ができる程の人気料理です。他には「麻辣臭豆腐」「牛肉麵」「天婦羅」など台湾の伝統的な屋台料理も定番です。　
+        </p>
+        <p class="modalText2">営業時間：17:00 〜 23:00</p>
+      </div>
+    </div>
+
+    <!-- モーダル左下 -->
+    <div class="modal3" id="modal3">
+      
+        <div class="modal-content3">
+          <img class="close_btn" src="image/close_btn.svg" alt="閉じる" onclick="closeModal()">
+          <p class="modalTitle">士林夜市</p>
+          <img class="market_modal1" src="image/market_modal3.png" alt="士林夜市">
+
+          <p class="modalText">
+            ここは市内で最も規模が大きく知名度の高い夜市です。台湾のおいしい屋台グルメからユニークな雑貨まで、ありとあらゆるものが売られています。その種類の豊富さと敷地の広さ、歴史、そして夜遊びスポットとしての人気度は、何から何まで台北ナンバーワン。絶対にはずせない魅惑スポットです。
+          </p>
+          <p class="modalText2">営業時間：17:00 〜 23:00</p>
+        </div>
+      </div>
+
+      <!-- モーダル右下 -->
+      <div class="modal4" id="modal4">
+        <div class="modal-content4">
+          <img class="close_btn" src="image/close_btn.svg" alt="閉じる" onclick="closeModal()">
+          <p class="modalTitle">通化夜市</p>
+          <img class="market_modal1" src="image/market_modal4.png" alt="士林夜市">
+
+          <p class="modalText">
+            台北の他の夜市と比べると小規模ではあるものの、食べ物においてはどの夜市にも決して劣りません。有名な駱記小炒（炒め物）、裕品元の氷火湯円、平価鉄板焼、通化夜市の揚げサツマイモボールは、ぜひとも賞味したい特色的な伝統軽食です。マッサージ店もたくさんあり、1日の終わりに最適な夜市です。
+          </p>
+          <p class="modalText2">営業時間：17:00 〜 24:00</p>
+        </div>
+      </div>
+      <script src="js/taipei.js"></script>
+
+      <footer>
+        <div class="center">
+          <img src="../common/image/national_flag.svg" alt="台湾国旗" class="flag">
+        </div>
+        <ul class="f_nav">
+          <!-- ！！！！！！！！！！！！！！！！！！ -->
+          <!-- 自分のページのみ先頭の「../」消して下さい -->
+          <li><a href="../index.html">TOP</a></li>
+          <li><a href="taipei/index.html">台北</a></li>
+          <li><a href="../taichung/index.html">台中</a></li>
+          <li><a href="../tainan/index.html">台南</a></li>
+          <li><a href="#">当サイトのポリシー</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+
+        <ul class="sns_logo">
+          <li><a href="#"><img src="../common/image/facebook_logo.png" alt="facebookロゴ"></a></li>
+          <li><a href="#"><img src="../common/image/instagram_logo.png" alt="instagramロゴ"></a></li>
+          <li><a href="#"><img src="../common/image/x_logo.png" alt="Xロゴ"></a></li>
+        </ul>
+
+        <p class="copyright">
+          Copyright (C) TAIWAN Traveler</p>
+      </footer>
+  </body>
+</main>
 
 </html>

@@ -1,1 +1,494 @@
 @charset "UTF-8";
+
+body {
+  /* max-width: 375px; */
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  background-color: #f4f4f4;
+   
+  font-family: "Zen Kaku Gothic New", serif;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+
+
+/* width100%の方がいいと思う */
+header {
+  background: url(../image/taipei_top.png) no-repeat top center/cover;
+  /* max-width: 375px; */
+  width: 100%;
+  height: 177.86vw;
+  /* padding: 2.133vw 3.2vw; */
+  position: relative;
+  /* max-width: 375px; */
+  /* height: 667px; */
+}
+
+/* 台北の文字がでかいです */
+.taipei_top2 {
+  /* 台北のデカ文字 */
+  /* height:372px; */
+
+  /* 199/375*100 */
+  width: 53vw;
+  /* height: 372px; */
+  display: block;
+  margin: auto;
+  /* padding-top: 120px; */
+  /* max-width: 199px; */
+  padding:  32vw 0vw 0 ;
+}
+
+header p {
+  color: #fff;
+  /* font-size: 12px; */
+  font-size: 3.2vw;
+  font-weight: bold;
+  width: 65.86vw;
+  position: absolute;
+  /* top: 90.104vw; */
+  bottom: 2.133vw;
+  right: 1vw;
+  /* line-height: 19.2px; */
+}
+
+
+.taipei_top {
+  width: 295px;
+  height: 180px;
+  /* カンプは領域で挿入してるのでサイズは違う(rectangle14) */
+}
+
+/* sction Attraction */
+.Attraction {
+  /* max-width: 295px; */
+  /* height: 1740px; */
+  margin: auto 40px;
+  width: 78.6vw;
+}
+
+/* ラーメンみたいな画像付けた見出しです(使いまわせます) */
+.heading {
+  width: 60vw;
+  height: 10vw;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-top: 3px;
+  font-size: 5.8vw;
+  font-weight: 400;
+  text-align: center;
+  background: url(../image/frame.png) no-repeat bottom center/cover;
+  align-items: center;
+}
+/* 九分の画像 */
+.kyufun{
+  width: 78.6vw;
+  margin: auto;
+}
+/* 見出しの小さい文字です18pxは適当 */
+.sub {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Attraction内の各章(九分、台北101) */
+.subtitle {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 40px auto 20.5px;
+  text-align: center;
+  /* width: 100%; */
+}
+/* 青いテキストの中 */
+.paragraph {
+  font-size: 12px;
+  line-height: 19.2px;
+  /* margin: 20px 16px; */
+  text-align: start;
+  /* w263をvw */
+  max-width: 70vw;
+  width: 70.1vw;
+  /* height: 191px; */
+  /* letter-spacing: 2px; */
+  width: max-content;
+  padding: 20px 16px;
+}
+
+p{
+  margin: 0;
+}
+/* 九分の青いテキストエリア */
+.blue {
+  max-height: 231px;
+  /* max-width: 295px; */
+  /* width: 78.6vw; */
+  background-color: rgba(108, 196, 216, 0.2);
+  /* padding: 20px 16px; */
+  margin:  20.5px 0;
+  /* display: block; */
+  text-align: center;
+  align-items: center;
+  width: 78.6vw;
+  /* padding-left: 20px; */
+}
+/* 九分の画像二つ並び */
+.imagebox {
+  display: flex;
+  justify-content: space-between;
+  /* max-width: 295px; */
+  /* width: 100%; */
+  width:78.6vw ;
+}
+/* 画像二つを同じクラスに */
+.kyufun_box1{
+  width: 100%;
+  /* max-width: 140px; */
+  width: 37.3vw;
+  /* min-width: 125px; */
+  /* margin: 15px; */
+}
+
+/* 幻想的な夕暮れがねらい目 */
+.text2 {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+max-width: 144px;
+/* width: 38vw; */
+margin: 8px auto;
+}
+
+/* 15:00～19:00 */
+.text3{
+font-size: 16px;
+font-weight: bold;
+line-height: 16px;
+text-align: center;
+margin: 8px 0;
+}
+
+/* 九分の青いテキストエリア */
+.blue2{
+background-color: rgba(108, 196, 216, 0.2);
+margin: 20px 0 40px;
+max-height: 52px;
+padding: 8px;
+}
+
+/* 台北101上の横線 */
+.border {
+  /* width: 225px; */
+  max-width: 60vw;
+  height: 1px;
+  background-color: black;
+  margin:  auto;
+}
+
+/* 台北101の写真 */
+.taipei101{
+  width: 78.6vw;
+  margin: auto;
+}
+/* 台北101の青いテキストエリア */
+.blue3{
+  background-color: rgba(108, 196, 216, 0.2);
+  margin: 20px 0 40px;
+  max-height: 192px;
+  /* padding: 8px; */
+  width: 78.6vw;
+  }
+
+  /* 台北101の青いテキスト */
+  .text4 {
+    font-size: 12px;
+    line-height: 12px;
+    /* text-align: center; */
+  max-width: 70vw;
+  width: 70vw;
+  /* width: 38.4px; */
+  padding: 20px 16px;
+  margin: auto;
+  max-height: 192px;
+  }
+
+
+  .NightMarket {
+    /* max-width: 295px; */
+    /* height: 1740px; */
+    margin: auto 40px;
+    width: 78.6vw;
+  }
+
+
+  /* NightMarket 夜一 */
+.text-container {
+  width: 78.67vw; 
+  /* 375pxに対する295pxの割合 */
+  /* max-width: 295px; */
+  /* height: 33.87vw; 375pxに対する127pxの割合 */
+  max-height: 127px;
+  height: 127px;
+  margin: 0 auto;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  position: relative;
+  padding: 16px 0; 
+  /* 上下に16pxの余白を追加（なんか）16だと余白ないんで32x */
+}
+
+/* NightMarket 夜一の上下にある線 */
+.text-container::before,
+.text-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  left: 0;
+}
+
+.text-container::before {
+  top: 0;
+}
+
+.text-container::after {
+  bottom: 0;
+}
+
+.text-container{
+  margin: 40px auto 20px;
+}
+
+.text-container p {
+  /* margin: auto; */
+  line-height: 19.2px;
+  min-height: 95px;
+  /* height: 95px; */
+  /* align-items: center; */
+}
+/* 画像です */
+.nightmarket1{
+  width: 78.6vw;
+  /* margin:  auto; */
+  margin:  20px auto;
+align-items: center;
+
+}
+/* 画像です */
+.nightmarket2{
+  width: 78.6vw;
+  margin:  20px  auto;
+align-items: center;
+}
+
+/* モーダルボタンの親 */
+.modalBtn{
+  /* display: flex; */
+      /* flex-wrap: wrap; */
+      /* justify-content: space-between; */
+      /* margin: auto; */
+      max-width: 73vw;
+      margin: auto;
+      gap: 3.2vw;
+/* margin: 0 50px; */
+  display: grid;
+grid-template-rows:15vw 15vw ;
+grid-template-columns: 35vw 35vw ;
+row-gap: 3.2vw;
+}
+
+
+
+
+
+
+/* モーダルのボタン(4つ) */
+.btn {
+  /* padding: 10px 20px; */
+  /* font-size: 18px; */
+  background-color: #f4f4f4;
+  /* border: 2px solid black; */
+  /* cursor: pointer; */
+  /* border-radius: 5px; */
+  border-style: none;
+  /* width: 131px; */
+  /* height: 57px; */
+  /* border: none; */
+  /* background: #ccc; */
+  cursor: pointer;
+  margin: auto ;
+  /* align-items: center; */
+}
+
+/* モーダルのボタン四つ(こっちが本体) */
+.btnflame{
+  width: 34vw;
+  /* height: 57px; */
+  /* margin:12px ; */
+  /* gap: 12px; */
+  background-color: #f4f4f4;
+  gap: 3.2vw;
+  /* margin: 3.2vw; */
+}
+
+/* sction Access */
+.Access{
+  margin: auto 40px;
+  width: 78.6vw;
+  margin-top: 40px;
+  /* text-align: center; */
+}
+
+/* 各地へのアクセスにご利用ください */
+.access_subtext{
+  margin: 0 auto 8px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+/* 下の横線 */
+.access_sub{
+  border-bottom: 1px solid black;
+  padding: 8px 0;
+  max-width: 60vw;
+  margin-bottom: 20px;
+  margin: auto;
+}
+
+.access{
+  width: 78.6vw;
+  margin:  20px 0px;
+align-items: center;
+}
+
+.subway{
+  margin-bottom: 12px;
+}
+
+.subwayText{
+margin-bottom: 20px;
+}
+
+.subway{
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+}
+.benesse{
+  width: 26.6vw;
+}
+.textaria{
+  font-size: 12px;
+  line-height: 19.2px;
+}
+
+
+.modal,.modal2,.modal3,.modal4 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* width: 375px; */
+  width: 100%;
+  height: 100%;
+  background: #0180BE;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.modal-content,.modal-content2,.modal-content3,.modal-content4 {
+  /* background: white; */
+  /* padding: 20px; */
+  width: 100%;
+  /* max-width: 375px; */
+  position: relative;
+  text-align: center;
+  /* border-radius: 10px; */
+  
+}
+
+.close_btn{
+  display: block;
+  margin: 10px;
+margin-left: auto;
+
+}
+
+/* モーダルの画像のことです。 */
+.market_modal1{
+  width: 89vw;
+  /* display: block; */
+}
+
+.modalTitle{
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 80px auto 32px;
+}
+
+.modalText{
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 19.2px;
+  width: 80.8vw;
+  margin: 20px auto;
+  height: 115.2px;
+  text-align: left;
+}
+
+.modalText2{
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 19.2px;
+  margin: 20px 0 133px;
+}
+/* .modal-content img {
+  width: 335px;
+  height: 223px;
+} */
+/* .modal-content p {
+  font-size: 14px;
+  margin-top: 10px;
+  border: none;
+} */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+/* ここからフッターの微調整 */
+.f_nav{
+padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+.sns_logo{
+  padding: 0;
+  list-style: none;
+  text-decoration-line: none;
+}
+/* .copyright{ */
+  /* padding: 20px auto; */
+/* } */
+
+
+@media screen and (max-width:767px){
+}
+
+@media screen and (min-width:768px){
+  
+}
