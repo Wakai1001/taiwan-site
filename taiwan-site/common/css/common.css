@@ -290,6 +290,13 @@ footer {
   }
 
   /* footer */
+  .top_btn {
+    position: fixed;
+    bottom: 140px;
+    right: 40px;
+    z-index: 9999;
+  }
+
   .flag {
     width: 64px;
     margin-top: 40px;
