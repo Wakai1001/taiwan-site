@@ -5,6 +5,10 @@ html {
   overflow-x: hidden;
   width: 375px;
   font-family: "Zen Kaku Gothic New,sans-serif";
+  font-family: "Josefin Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
 body {
@@ -856,6 +860,43 @@ footer{
     padding-left: 20px;
   }
 
+  #gurume {
+    margin: 0 0 0 auto;
+    width: 40vw;
+  }
+
+  #sensen {
+    margin: 100px auto 100px auto;
+  }
+
+  #sen1 {
+    margin: 40px 0 40px auto;
+  }
+
+  #sen2 {
+    margin: 40px 0 40px auto;
+  }
+
+  #sen3 {
+    margin: 40px auto 40px 2vw;
+  }
+
+  #sen4 {
+    margin: 40px auto 40px 2vw;
+  }
+
+  #haba70 {
+    text-align: start;
+    width: 40vw;
+    margin: 0 auto 0 2vw;
+  }
+
+  #renka {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 50px 0;
+  }
+
 
 
 }
@@ -872,6 +913,11 @@ footer{
 
   #namazu {
     display: none;
+  }
+
+  #gurume {
+    width: 70vw;
+    margin: 30px auto;
   }
 
 }

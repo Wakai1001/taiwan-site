@@ -13,42 +13,15 @@
   <link rel="stylesheet" href="../common/css/common.css">
   <!-- <link rel="stylesheet" href="../common/css/common.css"> -->
   <link rel="stylesheet" href="css/tainan.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP:wght@200..900&family=Sawarabi+Mincho&family=Zen+Kaku+Gothic+New&display=swap"
+    rel="stylesheet">
   <title>Document</title>
 </head>
 <header>
-  <!-- ロゴ画像 -->
-  <h1><a href="../index.html"><img src="../common/image/logo.svg" alt="ロゴ画像(TAIWAN)"></a></h1>
 
-  <!-- ドロワーメニュー -->
-  <!-- global menu スマホ用nav-->
-  <nav class="g_menu">
-    <!-- menu open -->
-    <input type="checkbox" id="menu_btn" class="menu_btn">
-    <!-- icon -->
-    <label class="menu_icon" for="menu_btn">
-      <!-- border -->
-      <span class="navicon"></span>
-    </label>
-    <ul class="menu">
-      <!-- ！！！！！！！！！！！！！！！！！！ -->
-      <!-- 自分のページのみ先頭の「../」消して下さい -->
-      <li><a href="../index.html">TOP</a></li>
-      <li><a href="../taipei/index.html">台北</a></li>
-      <li><a href="../taichung/index.html">台中</a></li>
-      <li><a href="tainan/index.html">台南</a></li>
-    </ul>
-  </nav>
-
-  <h1 class="pc_logo_image"><a href="#"><img src="../common/image/pc_logo.png" alt="ロゴ画像(TAIWAN)"></a></h1>
-
-  <ul class="pc_menu">
-    <!-- ！！！！！！！！！！！！！！！！！！ -->
-    <!-- 自分のページのみ先頭の「../」消して下さい -->
-    <li><a href="../index.html">TOP</a></li>
-    <li><a href="../taipei/index.html">台北</a></li>
-    <li><a href="../taichung/index.html">台中</a></li>
-    <li><a href="tainan/index.html">台南</a></li>
-  </ul>
 
 
   <div class="hero">
@@ -88,7 +61,7 @@
           <p class="haikei" id="isikawa">露店めぐりは日中、ノスタルジックな撮影は夜がおすすめです</p>
         </div>
 
-        <span class="sen"></span>
+        <span class="sen" id="sensen"></span>
         <p class="hutozi">赤崁楼</p>
         <div class="kukakuwake">
           <img src="image/sekikanrou_main.png" alt="赤崁楼" class="gazou" id="mitokondoria">
@@ -176,12 +149,12 @@
       </div>
       <div class="yohaku20">
         <div id="jaga">
-          <span class="sen"></span>
+          <span class="sen" id="sen3"></span>
           <p class="hasu" id="haba70">美しい蓮の花々が咲く白河地区。<br>
             自然に囲まれて、至福のひとときをすごしませんか？</p>
-          <span class="sen"></span>
+          <span class="sen" id="sen4"></span>
         </div>
-        <p class="ookime">白河蓮花</p>
+        <p class="ookime" id="renka">白河蓮花</p>
         <div id="sibainu">
           <img src="image/hasu1.png" alt="蓮1" class="gazou" id="simokitazawa">
           <p class="hasu" id="siranami">
