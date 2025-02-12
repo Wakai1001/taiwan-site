@@ -6,9 +6,35 @@ body {
   font-family: "Zen Kaku Gothic New,sans-serif";
   font-size: 12px;
   font-weight: 400;
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+}
+
+a:visited {
+  color: #fff;
 }
 
 /* header */
+.logo_image {
+  width: 100px;
+  text-align: left;
+  z-index: 99;
+}
+
+.pc_logo_image {
+  display: none;
+}
+
+.pc_menu {
+  display: none;
+}
+
+.pc_top_image {
+  display: none;
+}
 
 /* footer */
 footer {
@@ -20,14 +46,13 @@ footer {
 }
 
 .flag {
+  width: 32px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .f_nav {
-  color: #fff;
   letter-spacing: 0;
-  line-height: 1;
   max-width: 200px;
   margin-left: auto;
   margin-right: auto;
@@ -44,10 +69,16 @@ footer {
 
 .sns_logo {
   display: flex;
-  max-width: 154px;
+  width: 154px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  z-index: 99;
+}
+
+.sns_logo a {
+  display: inline-block;
+  height: 100%;
 }
 
 .sns_logo li:not(:first-of-type) {
@@ -62,10 +93,13 @@ footer {
 .copyright {
   font-size: 10px;
   letter-spacing: 0;
-  line-height: 1;
   color: #fff;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   text-align: center;
+}
+
+.f_img {
+  display: none;
 }
 
 /* drawer menu*/
@@ -88,12 +122,16 @@ footer {
 .menu_icon {
   /* 右上に絶対配置 */
   position: absolute;
-  right: 12px;
-  top: 20px;
-  height: 20px;
-  padding-top: 5px;
+  right: 8px;
+  top: 10px;
+  height: 25px;
+  padding-right: 8.5px;
+  padding-left: 8.5px;
+  padding-top: 23px;
+  border-radius: 50%;
   /* ポインターの形状 指 */
   cursor: pointer;
+  background-color: #000000B3;
 }
 
 /* span 要素 中央の線作成 */
@@ -114,13 +152,14 @@ footer {
 .navicon::before,
 .navicon::after {
   content: "";
-  width: 100%;
+  width: 80%;
   height: 100%;
   background: #fff;
   /* 基準要素 span.navicon に対して絶対配置 */
   position: absolute;
   /* 三本線と X の切替えアニメーション 速く始まりゆっくり終わる */
   transition: all .4s ease-out;
+  left: 3px;
 }
 
 /* 下の線のみ */
@@ -144,28 +183,36 @@ footer {
   /* 最大の高さ */
   max-height: 0px;
   /* 非表示の際のアニメーション */
-  transition: max-height 0.6s;
+  transition: max-height 1.5s;
+
 }
 
 /* 1 つ目の li 要素 */
 .menu li:first-of-type {
-  padding-top: 56px;
+  padding-top: 120px;
+}
+
+.menu li:last-of-type {
+  margin-bottom: 100vh;
 }
 
 /* a 要素 */
 .menu a {
   display: block;
-  padding: 24px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 16px 20px;
 }
 
 /* ↓チェックボックスが ON の場合 */
 /* 非表示にしていた ul.menu を表示 */
 .menu_btn:checked~.menu {
-  max-height: 375px;
+  max-height: 100vh;
   /* 元 0px */
   /* 表示の際のアニメーション */
-  transition: max-height 0.6s;
+  transition: max-height 1.5s;
 }
+
 
 /* 中央の線を非表示 */
 .menu_btn:checked~.menu_icon .navicon {
@@ -178,18 +225,190 @@ footer {
   /* 反時計回りに回転 */
   transform: rotate(-45deg);
   top: 0;
+  width: 100%;
+  left: 0;
   /* 元 10px */
 }
 
+.menu_btn:checked~.menu_icon .navicon::after {
+  /* 時計回りに回転 */
+  transform: rotate(45deg);
+  top: 0;
+  width: 100%;
+  left: 0;
+  /* 元 -10px */
+}
+
+/* 768px以上 */
+@media screen and (min-width:768px) {
+
+  /* header */
+  .logo_image img {
+    display: none;
+  }
+
+  .pc_logo_image {
+    display: block;
+    margin-left: 7.5vw;
+  }
+
+  .pc_logo_image img {
+    width: 140px;
+    margin-top: 20px;
+  }
+
+  .pc_top_image {
+    display: block;
+    width: 56vw;
+    margin-top: 151px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pc_top_image img {
+    display: block;
+    width: 56vw;
+  }
+
+  /* nav */
+  .menu_icon {
+    display: none;
+  }
+
+  .pc_menu {
+    display: flex;
+    position: absolute;
+    top: 16px;
+    right: 0;
+    margin-right: 14vh;
+  }
+
+  .pc_menu li {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px;
+  }
+
+  /* footer */
+  .top_btn {
+    position: fixed;
+    bottom: 140px;
+    right: 40px;
+    z-index: 9999;
+  }
+
+  .flag {
+    width: 64px;
+    margin-top: 40px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .f_nav,
+  .f_img,
+  .sns_logo {
+    flex-basis: 30%;
+    max-width: 300px;
+  }
+
+  .f_nav {
+    width: 100%;
+    margin: 0;
+  }
+
+  .f_nav li {
+
+    font-size: 20px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+
+  .f_img {
+    display: block;
+    width: 240px;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+
+  .sns_logo {
+    margin: auto 0 20px 0;
+    justify-content: space-between;
+  }
+
+  .sns_logo li a img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .sns_logo li:not(:first-of-type) {
+    margin-left: 0px;
+  }
+
+  .copyright {
+    font-size: 12px;
+    padding-bottom: 40px;
+  }
+
+}
+
 /* ロード画面 */
+
+
+.loading {
+  /*ローディング画面の縦横幅を画面いっぱいになるように指定*/
+  width: 100vw;
+  height: 100vh;
+  /*ローディング画面の表示位置を固定*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #1082ce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*ローディング画面を0.5秒かけて非表示にする*/
+  transition: all 0.5s linear;
+}
+
+/*ローディング画面を非表示にする*/
+.loading.loaded {
+  /*0.5秒かけてopacityを0にする*/
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading-text {
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.spinner {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 4px solid #FFF;
+  border-left-color: #000000;
+  /* アニメーションを1秒かけて実行 */
+  animation: yokohama 1s linear infinite;
+}
+
 /* body {
 
   background-color: #007AB7;
   overflow: hidden;
 
-}
+} */
 
-#uguisudani {
+/* #uguisudani {
   animation: yokohama 3s infinite linear;
   transform: scale(3);
   position: relative;
@@ -197,7 +416,7 @@ footer {
   left: 50vw;
 
 
-}
+} */
 
 @keyframes yokohama {
   0% {
@@ -209,15 +428,17 @@ footer {
     transform: scale(3);
   }
 
-  50% { */
-/* display: none; */
-/* transform: scale(5);
+  50% {
+    display: none;
+    transform: scale(5);
+    transform: rotate(3000deg);
   }
 
   100% {
     transform: scale(15);
+    transform: rotate(-500deg);
     opacity: 1;
   }
 
 
-} */
+}
