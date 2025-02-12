@@ -50,6 +50,8 @@ header {
   margin-top: 160px;
 }
 
+
+
 /* introduction sec */
 /* top */
 .intro_top {
@@ -219,5 +221,10 @@ header {
     background: url("../image/pctop_back_image.jpg") no-repeat top/cover;
     height: 768px;
   }
+
+  .top_image {
+    display: none;
+  }
+
 
 }
