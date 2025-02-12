@@ -1,1 +1,82 @@
 @charset "UTF-8";
+
+body {
+  max-width: 756px;
+  text-align: center;
+  font-size: 12px;
+}
+
+p {
+  overflow-wrap: break-word;
+}
+
+header {
+  background-image: url("../image/taichung_topbg1.png");
+  min-width: 375px;
+  height: 667px;
+}
+
+.taichung {
+  width: 88px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+header p {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 1.7;
+  background-image: url("../image/h2bgimage.png");
+  margin: auto;
+  background-repeat: no-repeat;
+}
+
+.sub_title {
+  font-size: 16px;
+}
+
+section .attraction {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 10vh 10vh 40vh 40vh 25vh 10vh;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+section.attraction img {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+section.attraction p {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.explanationo {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+.sub_image {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+}
+
+.point {
+  grid-column: 1 / 2;
+  grid-row: 6 / 7;
+}
