@@ -5,6 +5,10 @@ html {
   overflow-x: hidden;
   width: 375px;
   font-family: "Zen Kaku Gothic New,sans-serif";
+  font-family: "Josefin Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
 body {
@@ -324,12 +328,269 @@ img {
 
 }
 
+/* 
+footer{
+  position: relative;
+} */
+
+/* #kani {
+  display: block;
+  width: 100px;
+  height: 100px;
+  animation: oisiku 3s infinite linear;
+  padding: 5px;
+}
+
+#ue {
+  width: 100px;
+  height: 100px;
+  animation: mazuku 3s infinite linear;
+  padding: 5px;
+} */
+
+#a {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  animation: a1 3s infinite linear;
+}
+
+/* #b {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  animation: b1 3s infinite linear;
+}
+
+#c {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  animation: c1 3s infinite linear;
+} */
+
+#d {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  top: -180px;
+  left: 35%;
+}
+
+/* @keyframes oisiku {
+  0% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  20% {
+    filter: brightness(100);
+    transform: translateY(-10px);
+  }
+
+  40% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  60% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  80% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  100% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+}
+
+@keyframes mazuku {
+  0% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  20% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  40% {
+    filter: brightness(100);
+    transform: translateY(-10px);
+  }
+
+  60% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  80% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  100% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+} */
+
+@keyframes a1 {
+  0% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  20% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  40% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  60% {
+    filter: brightness(100);
+    transform: translateY(-10px);
+  }
+
+  80% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  100% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+}
+
+/* @keyframes b1 {
+  0% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  20% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  40% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  60% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  80% {
+    filter: brightness(100);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+}
+
+@keyframes c1 {
+  0% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  20% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  40% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  60% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  80% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  100% {
+    filter: brightness(100);
+    transform: translateY(-10px);
+  }
+} */
+
+
+/* ローディング画面 */
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #0bd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  margin: 200px auto;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: sk-scaleout 1s infinite ease-in-out;
+}
+
+/* ローディングアニメーション */
+@keyframes sk-scaleout {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* コンテンツ部分の装飾 */
+.gallery {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
 /* メディアクエリ */
 
 @media screen and (min-width:768px) {
 
 
-  h1 {
+  .midasi {
     font-size: clamp(22px, 5vw, 44px);
     width: 70vw;
     height: 5vw;
@@ -416,25 +677,41 @@ img {
 
   .yoko img {
     height: auto;
-    object-fit: fill;
     object-position: 0 100%;
+    max-width: 600px;
   }
 
 
 
   .jojoen {
-    display: flex;
     grid-column: 1/2;
     grid-row: 2/3;
     object-fit: cover;
     height: 177px;
     margin-top: 10px;
+    display: grid;
+    grid-template-columns: 49% 2% 49%;
+    grid-template-rows: 177px;
+  }
+
+  #rokomoko {
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #zitensya {
+    grid-column: 3/4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .jojoen img {
     object-fit: cover;
-    max-width: 278px;
-    width: 25vw;
+    /* max-width: 278px; */
+    /* width: 25vw; */
     grid-auto-flow: row;
     grid-auto-flow: column;
   }
@@ -443,6 +720,230 @@ img {
     padding-right: 5px;
   }
 
+  .kukakuwake {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 320px 177px;
+    grid-auto-flow: row;
+    grid-auto-flow: column;
+
+  }
+
+  #mitokondoria {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    object-fit: cover;
+    height: 320px;
+  }
+
+  #sinsaibasi {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 40px 10px;
+    margin: 10px 20px;
+    font-size: 20px;
+    align-self: center;
+  }
+
+  #miso {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    object-fit: cover;
+    height: 177px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 49% 2% 49%;
+    grid-template-rows: 177px;
+  }
+
+  #sakura1 {
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #sakura2 {
+    grid-column: 3/4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #naka {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 50px 20px;
+    font-size: 20px;
+    align-self: center;
+  }
+
+  #gazougun {
+    display: none;
+  }
+
+  #simokitazawa {
+    margin-bottom: 40px;
+  }
+
+  #asakusa {
+    margin-bottom: 100px;
+  }
+
+  #rasya {
+    font-size: clamp(22px, 5vw, 44px);
+    width: 70vw;
+    height: 5vw;
+    margin: 0 40px 0 auto;
+    text-align: center;
+    padding-top: 3px;
+    margin-top: 40px;
+    max-width: 560px;
+    font-weight: 400;
+  }
+
+
+  .sankaku {
+    line-height: 2;
+  }
+
+  .sen {
+    width: 40vw;
+    background-color: rebeccapurple;
+    height: 2px;
+  }
+
+  .gourmet p {
+    font-size: 20px;
+  }
+
+  .tanyao {
+    width: 120px;
+    line-height: 1.5;
+  }
+
+  #dai1 {
+    display: flex;
+    margin-top: auto;
+  }
+
+  #dai2 {
+    display: flex;
+  }
+
+  #dai3 {
+    display: flex;
+  }
+
+  #dai4 {
+    display: flex;
+  }
+
+  #yotuwari {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 475px 475px;
+    gap: 5%;
+    margin: 0 100px;
+  }
+
+  #sibainu {
+    display: flex;
+  }
+
+  #tudanuma {
+    display: none;
+  }
+
+  #namazu {
+    display: flex;
+  }
+
+  .hasu {
+    font-size: 20px;
+  }
+
+  #siranami {
+    font-size: 20px;
+    margin: 140px 40px;
+    line-height: 1.5em;
+    width: 70vw;
+  }
+
+  #pasuta {
+    margin: 140px 40px;
+    line-height: 1.5em;
+    width: 70vw;
+  }
+
+  #siba {
+    font-size: 36px;
+  }
+
+  #kawazu {
+    font-size: 36px;
+  }
+
+  #pao {
+    font-size: 36px;
+  }
+
+  #nikumesi {
+    font-size: 36px;
+  }
+
+  .tanyao {
+    margin-top: 50px;
+
+  }
+
+  .healing {
+    margin-top: 200px;
+  }
+
+  .pinhu {
+    padding-top: 51px;
+    padding-left: 20px;
+  }
+
+  #gurume {
+    margin: 0 0 0 auto;
+    width: 40vw;
+  }
+
+  #sensen {
+    margin: 100px auto 100px auto;
+  }
+
+  #sen1 {
+    margin: 40px 0 40px auto;
+  }
+
+  #sen2 {
+    margin: 40px 0 40px auto;
+  }
+
+  #sen3 {
+    margin: 40px auto 40px 2vw;
+  }
+
+  #sen4 {
+    margin: 40px auto 40px 2vw;
+  }
+
+  #haba70 {
+    text-align: start;
+    width: 40vw;
+    margin: 0 auto 0 2vw;
+  }
+
+  #renka {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 50px 0;
+  }
+
+
 
 }
 
@@ -450,6 +951,19 @@ img {
 @media screen and (max-width:767px) {
   .jojoen {
     display: none;
+  }
+
+  #miso {
+    display: none;
+  }
+
+  #namazu {
+    display: none;
+  }
+
+  #gurume {
+    width: 70vw;
+    margin: 30px auto;
   }
 
 }
