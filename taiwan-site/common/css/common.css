@@ -6,6 +6,7 @@ body {
   font-family: "Zen Kaku Gothic New", sns-serif;
   font-size: 12px;
   font-weight: 400;
+  box-sizing: border-box;
 }
 
 a {
@@ -28,6 +29,10 @@ a:visited {
 }
 
 .pc_menu {
+  display: none;
+}
+
+.pc_top_image {
   display: none;
 }
 
@@ -58,6 +63,7 @@ footer {
 }
 
 .flag {
+  width: 32px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -80,15 +86,25 @@ footer {
 
 .sns_logo {
   display: flex;
-  max-width: 154px;
+  width: 154px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
   z-index: 99;
 }
 
+
+.sns_logo a {
+  display: inline-block;
+  height: 100%;
+}
+
 .sns_logo li:not(:first-of-type) {
   margin-left: 20px;
+}
+
+.f_img {
+  display: none;
 }
 
 .sns_logo li img {
@@ -259,6 +275,19 @@ footer {
     margin-top: 20px;
   }
 
+  .pc_top_image {
+    display: block;
+    width: 56vw;
+    margin-top: 151px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pc_top_image img {
+    display: block;
+    width: 56vw;
+  }
+
   /* nav */
   .menu_icon {
     display: none;
@@ -278,6 +307,70 @@ footer {
     padding: 20px;
   }
 
+}
+
+/* footer */
+.top_btn {
+  position: fixed;
+  bottom: 140px;
+  right: 40px;
+  z-index: 9999;
+}
+
+.flag {
+  width: 64px;
+  margin-top: 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.f_nav,
+.f_img,
+.sns_logo {
+  flex-basis: 30%;
+  max-width: 300px;
+}
+
+.f_nav {
+  width: 100%;
+  margin: 0;
+}
+
+.f_nav li {
+
+  font-size: 20px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.f_img {
+  display: block;
+  width: 240px;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.sns_logo {
+  margin: auto 0 20px 0;
+  justify-content: space-between;
+}
+
+.sns_logo li a img {
+  width: 55px;
+  height: 55px;
+}
+
+.sns_logo li:not(:first-of-type) {
+  margin-left: 0px;
+}
+
+.copyright {
+  font-size: 12px;
+  padding-bottom: 40px;
 }
 
 /* ロード画面 */
