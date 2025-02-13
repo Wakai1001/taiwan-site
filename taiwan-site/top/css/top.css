@@ -212,8 +212,14 @@ header {
 @media screen and (min-width:768px) {
 
   /* common */
-  body {
-    max-width: 1366px;
+  .content {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section {
+    margin-bottom: 120px;
   }
 
   /* header */
@@ -226,5 +232,183 @@ header {
     display: none;
   }
 
+  /* headding */
+  h2 {
+    font-size: 48px;
+    width: 530px;
+    height: 96px;
+    padding-top: 30px;
+  }
+
+  h2 span {
+    font-size: 24px;
+  }
+
+  /* introduction */
+  .intro_top {
+    background: url(../image/pc_intro_img1.jpg) no-repeat center/cover;
+  }
+
+  .intro_top .content {
+    display: flex;
+    padding-top: 80px;
+    justify-content: center;
+  }
+
+  .intro_tl {
+    flex-basis: 39vw;
+  }
+
+  .intro_flag {
+    width: 117px;
+    height: 78px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  .intro_top h3 {
+    font-size: 48px;
+    text-align: left;
+  }
+
+  .intro_top h4 {
+    font-size: calc(0.75rem + ((1vw - 3.75px) * 2.0182));
+    width: 100%;
+    text-align: left;
+    border-bottom: transparent;
+  }
+
+  .intro_img {
+    flex-basis: 47vw;
+    height: auto;
+  }
+
+  .intro_bottom {
+    margin: 0;
+    background: url('../image/pc_intro_img2.jpg') no-repeat center/cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .intro_bottom .content {
+    display: flex;
+  }
+
+  .intro_bottom p {
+    display: inline;
+    margin: 0;
+    font-size: 20px;
+    width: 35vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 8vw;
+  }
+
+  .intro_bottom img {
+    width: 47vw;
+    height: auto;
+  }
+
+  /* gallery */
+  .gallery .content h2 {
+    margin-left: 0;
+  }
+
+  .gallery img {
+    width: 340px;
+    height: auto;
+  }
+
+  /* travel */
+  .travel h2 {
+    margin-right: 0;
+  }
+
+  .travel .flex {
+    justify-content: space-evenly;
+  }
+
+  .travel p {
+    width: 30vw;
+    font-size: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: auto 0;
+  }
+
+  .travel img {
+    width: 30vw;
+  }
+
+  /* event */
+  .event h2 {
+    margin-left: 0;
+  }
+
+  .event1,
+  .event2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  .event h3 {
+    text-align: left;
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .event img {
+    width: 43vw;
+    height: auto;
+  }
+
+  .event_detail {
+    flex-basis: 35vw;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .date_title {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .event_date {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .explanation {
+    font-size: 20px;
+    margin: 0;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  /* info */
+  .info_detail {
+    border: solid 1px #000;
+    padding: 40px;
+    font-size: 20px;
+  }
+
+  .info dl {
+    max-width: 1080px;
+  }
+
+  .info .info_title::before {
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+  }
+
+  .holiday dt {
+    width: 120px;
+  }
 
 }
