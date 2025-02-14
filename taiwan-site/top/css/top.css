@@ -329,11 +329,6 @@ header {
   }
 
   /* gallery */
-  .pc_flex {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
   .gallery .content h2 {
     margin-left: 0;
   }
@@ -344,6 +339,11 @@ header {
   }
 
   /* travel */
+  .pc_flex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   .travel h2 {
     margin-right: 0;
   }
@@ -432,4 +432,23 @@ header {
     width: 120px;
   }
 
+}
+
+/* loading */
+#cc {
+  width: 30vw;
+}
+
+.loading {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+
+  /* ↓ここ青にしてください↓ */
+  background-color: #6cbad8;
+  /* ↑明るめの青でお願いします↑ */
 }
