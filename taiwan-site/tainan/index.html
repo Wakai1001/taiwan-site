@@ -21,8 +21,8 @@
   <title>Document</title>
 </head>
 <header>
-  <!-- ロゴ画像 --><a href="../index.html"><img src="../common/image/logo.svg" alt="ロゴ画像(TAIWAN)" class="logo_imag"
-      id="marukame"></a>
+  <!-- ロゴ画像 --><a href="../index.html" id="marukame"><img src="../common/image/logo.svg" alt="ロゴ画像(TAIWAN)"
+      class="logo_imag"></a>
 
   <!-- ドロワーメニュー -->
   <!-- global menu スマホ用nav-->
@@ -47,7 +47,7 @@
 
   <!-- !!!!!!!!!!!!!!!!!追加!!!!!!!!!!!!!!!!!!!!! -->
   <!-- global menu pc用nav-->
-  <a href="#" class="pc_logo_image"><img src="../common/image/pc_logo.png" alt="ロゴ画像(TAIWAN)"></a>
+  <!-- <a href="#" class="pc_logo_image"><img src="../common/image/pc_logo.png" alt="ロゴ画像(TAIWAN)"></a> -->
 
   <ul class="pc_menu">
     <!-- ！！！！！！！！！！！！！！！！！！ -->
@@ -207,38 +207,41 @@
         </div>
       </div>
     </section>
-    <script src="js/tainan.js"></script>
-    <script src="../common/js/loading.js"></script>
+    <div class="loading">
 
-    <div id="gg">
-      <span id="nisiki"></span>
-      <span id="tumo"></span>
-      <span id="pon"></span>
-      <span id="kan"></span>
-      <span id="masu3"></span>
-      <span id="masu6"></span>
-      <span id="masu7"></span>
-      <span id="masu8"></span>
-      <span id="masu9"></span>
+      <div id="gg">
+        <span id="nisiki"></span>
+        <span id="tumo"></span>
+        <span id="pon"></span>
+        <span id="kan"></span>
+        <span id="masu3"></span>
+        <span id="masu6"></span>
+        <span id="masu7"></span>
+        <span id="masu8"></span>
+        <span id="masu9"></span>
+      </div>
+
+      <p id="siunten">
+        <span id="l">L</span>
+        <span id="o">o</span>
+        <span id="a">a</span>
+        <span id="q">d</span>
+        <span id="i">i</span>
+        <spam id="n">n</spam>
+        <span id="g">g</span>
+        …
+      </p>
     </div>
 
-    <p id="siunten">
-      <span id="l">L</span>
-      <span id="o">o</span>
-      <span id="a">a</span>
-      <span id="q">d</span>
-      <span id="i">i</span>
-      <spam id="n">n</spam>
-      <span id="g">g</span>
-      …
-    </p>
+    <script src="../common/js/loading.js"></script>
+    <script src="js/tainan.js"></script>
   </main>
   <!-- <div class="loading">
     <img src="../common/image/logo.svg" alt="ロゴロゴ" class="loading-text" id="uguisudani">
     <div class="spinner"></div>
   </div> -->
 
-  <script src="js/tainan.js"></script>
+
 
 
 </body>
@@ -263,7 +266,7 @@
 
     <ul class="sns_logo">
       <li><a href="#"><img src="../common/image/facebook_logo.png" alt="facebookロゴ"></a></li>
-      <li><a href="#"><img src="../common/image/instagram_logo.png" alt="instagramロゴ"></a></li>
+      <li><a href="#"><img src="../common/image/instagram_logo.png" alt="instagramロゴ" id="ins"></a></li>
       <li><a href="#"><img src="../common/image/x_logo.png" alt="Xロゴ"></a></li>
     </ul>
   </div>

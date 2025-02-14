@@ -375,88 +375,463 @@ footer {
 
 /* ロード画面 */
 
-
 .loading {
-  /*ローディング画面の縦横幅を画面いっぱいになるように指定*/
-  width: 100vw;
-  height: 100vh;
-  /*ローディング画面の表示位置を固定*/
-  position: fixed;
+  display: flex;
+  position: absolute;
   top: 0;
   left: 0;
-  background: #1082ce;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /*ローディング画面を0.5秒かけて非表示にする*/
-  transition: all 0.5s linear;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background-color: silver;
+
 }
 
-/*ローディング画面を非表示にする*/
-.loading.loaded {
-  /*0.5秒かけてopacityを0にする*/
-  opacity: 0;
-  visibility: hidden;
+/* ローディング画面 */
+
+
+#gg {
+  padding-top: 25vh;
+  display: grid;
+  width: 25vw;
+  margin: 0 auto;
+  grid-template-columns: 8vw 8vw 8vw;
+  grid-template-rows: 8vw 8vw 8vw;
+  position: absolute;
+  bottom: 25vh;
+  left: 20vw;
 }
 
-.loading-text {
-  color: #FFF;
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 30px;
-  text-align: center;
+#siunten {
+  font-size: 3vw;
+  width: 25vw;
+  position: absolute;
+  left: 55vw;
+  bottom: 20vh;
 }
 
-.spinner {
+#nisiki {
+  grid-column: 1/2;
+  grid-row: 1/2;
   display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 4px solid #FFF;
-  border-left-color: #000000;
-  /* アニメーションを1秒かけて実行 */
-  animation: yokohama 1s linear infinite;
+  width: 8vw;
+  height: 8vw;
+  background-color: #000;
+  animation: sansiki 5s infinite;
 }
 
-/* body {
+#tumo {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: block;
+  width: 8vw;
+  height: 8vw;
+  background-color: #000;
+  animation: sananko 5s infinite;
+}
 
-  background-color: #007AB7;
-  overflow: hidden;
+#masu3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  display: block;
+  width: 8vw;
+  height: 8vw;
+  background-color: #000;
+  animation: sansiki 5s infinite;
+}
 
-} */
+#pon {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: block;
+  width: 8vw;
+  height: 8vw;
+  background-color: #000;
+  animation: toitoi 5s infinite;
+}
 
-/* #uguisudani {
-  animation: yokohama 3s infinite linear;
-  transform: scale(3);
-  position: relative;
-  top: 50vh;
-  left: 50vw;
+#kan {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: block;
+  width: 8vw;
+  height: 8vw;
+  background-color: #000;
+  animation: sankantu 5s infinite;
+}
+
+#masu6 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: block;
+  width: 8vw;
+  height: 8vw;
+  background-color: #000;
+  animation: sananko 5s infinite;
+}
+
+#masu7 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: block;
+  width: 8vw;
+  height: 8vw;
+  background-color: #000;
+  animation: sansiki 5s infinite;
+}
+
+#masu8 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: block;
+  width: 8vw;
+  height: 8vw;
+  background-color: #000;
+  animation: sananko 5s infinite;
+}
+
+#masu9 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  display: block;
+  width: 8vw;
+  height: 8vw;
+  background-color: #000;
+  animation: sansiki 5s infinite;
+}
 
 
-} */
-
-@keyframes yokohama {
+@keyframes sansiki {
   0% {
     opacity: 0;
-    transform: scale(5);
+    transform: scale(0)rotate(-45deg);
   }
 
   25% {
-    transform: scale(3);
-  }
-
-  50% {
-    display: none;
-    transform: scale(5);
-    transform: rotate(3000deg);
-  }
-
-  100% {
-    transform: scale(15);
-    transform: rotate(-500deg);
+    transform: rotate(90deg)scale(1);
     opacity: 1;
   }
 
+  50% {
+    transform: rotate(180deg)scale(0);
+    opacity: 0;
+  }
 
+  75% {
+    transform: rotate(270deg)scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(360deg)scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes sananko {
+  0% {
+    opacity: 1;
+    transform: scale(0)rotate(-45deg);
+  }
+
+  25% {
+    transform: rotate(90deg)scale(0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(180deg)scale(1);
+    opacity: 1;
+  }
+
+  75% {
+    transform: rotate(270deg)scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(360deg)scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes toitoi {
+  0% {
+    opacity: 1;
+    transform: scale(0)rotate(-45deg);
+  }
+
+  25% {
+    transform: rotate(90deg)scale(0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(180deg)scale(1);
+    opacity: 1;
+  }
+
+  75% {
+    transform: rotate(270deg)scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(360deg)scale(1);
+    opacity: 1;
+  }
+
+}
+
+@keyframes sankantu {
+  0% {
+    opacity: 0;
+    transform: scale(0)rotate(-45deg);
+  }
+
+  25% {
+    transform: rotate(90deg)scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: rotate(180deg)scale(0);
+    opacity: 0;
+  }
+
+  75% {
+    transform: rotate(270deg)scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(360deg)scale(0);
+    opacity: 0;
+  }
+
+}
+
+
+
+
+#l {
+  animation: l1 5s infinite linear;
+}
+
+#o {
+  animation: o1 5s infinite linear;
+}
+
+#a {
+  animation: a1 5s infinite linear;
+}
+
+#d {
+  animation: d1 5s infinite linear;
+}
+
+#i {
+  animation: i1 5s infinite linear;
+}
+
+#n {
+  animation: n1 5s infinite linear;
+}
+
+#g {
+  animation: g1 5s infinite linear;
+}
+
+
+@keyframes l1 {
+  0% {
+    color: #0bd;
+    transform: translateY(0);
+  }
+
+  15% {
+    color: #000;
+    transform: translateY(-50px)scale(2);
+  }
+
+  40% {
+    transform: translateY(0);
+  }
+
+  60% {
+    transform: translateY(0);
+  }
+
+  80% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes a1 {
+  0% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  20% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  40% {
+    filter: brightness(100);
+    transform: translateY(-10px);
+  }
+
+  60% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  80% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  100% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+}
+
+@keyframes d1 {
+  0% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  20% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  40% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  60% {
+    filter: brightness(100);
+    transform: translateY(-10px);
+  }
+
+  80% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  100% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+}
+
+@keyframes i1 {
+  0% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  20% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  40% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  60% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  80% {
+    filter: brightness(100);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+}
+
+@keyframes n1 {
+  0% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  20% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  40% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  60% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  80% {
+    filter: brightness(1);
+    transform: translateY(0);
+  }
+
+  100% {
+    filter: brightness(100);
+    transform: translateY(-10px);
+  }
+}
+
+
+
+
+
+
+
+
+
+/* ロード画面消去用 */
+.loading.hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 500ms;
+}
+
+
+@media screen and (max-width:767px) {
+  .loading {
+    display: block;
+  }
+
+  #gg {
+    position: absolute;
+    top: 15vw;
+    left: 35vw;
+
+  }
+
+  #siunten {
+    position: absolute;
+    width: 40vw;
+    bottom: 5vh;
+    left: 55vw;
+    font-size: 5vw;
+  }
 }

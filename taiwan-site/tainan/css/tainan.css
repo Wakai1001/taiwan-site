@@ -223,6 +223,12 @@ header p {
   margin: 0 auto;
 }
 
+#marukame {
+  position: absolute;
+  top: 3vh;
+  left: 5vw;
+}
+
 
 /* メイン */
 /* フッター */
@@ -539,7 +545,7 @@ footer{
 } */
 
 
-/* ローディング画面 */
+/* ローディング画面 
 #loading {
   width: 100vw;
   height: 100vh;
@@ -963,7 +969,7 @@ footer{
     filter: brightness(100);
     transform: translateY(-10px);
   }
-}
+} */
 
 
 
@@ -1373,4 +1379,34 @@ footer{
     margin: 30px auto;
   }
 
+  .flex {
+    display: block;
+  }
+
+  .f_nav {
+    margin: 0 auto;
+    text-align: start;
+  }
+
+  .f_img {
+    margin: 20px auto;
+  }
+
+  .sns_logo {
+    width: 70%;
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-around;
+  }
+
+
+
 }
+
+
+/* ロードローラー */
+
+
+/* ロード画面呼び出しのみにしてアニメーション側で位置や領域を指定することにより自由に配置が可能、その後指定秒数後画面を消去で完成
+Zindexなどの画面に作用が少ないものや要素の幅等に作用しないものは呼び出し側でも問題ないが基本的にはアニメーション側があり
+*/

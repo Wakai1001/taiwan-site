@@ -1,5 +1,3 @@
-
-
 'use strict'
 
 //ローディング要素
@@ -11,7 +9,6 @@ window.addEventListener('load', () => {
   setTimeout(function () {
     //ローディング要素にhideクラスを付与
     loading.classList.add('hide');
-  }, 5000);
+  }, 3000);
 });
-
 
