@@ -972,6 +972,20 @@ footer{
 
 
 /* ローディングアニメーション */
+.loading {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+
+  /* ↓ここ青にしてください↓ */
+  background-color: silver;
+  /* ↑明るめの青でお願いします↑ */
+}
+
 @keyframes sk-scaleout {
   0% {
     transform: scale(0);

@@ -390,6 +390,8 @@ footer {
 }
 
 
+
+
 #cc {
   width: 30vw;
   margin: 0 auto;
@@ -428,6 +430,7 @@ footer {
   position: absolute;
   left: 55vw;
   bottom: 20vh;
+  display: flex;
 }
 
 #nisiki {
@@ -633,56 +636,76 @@ footer {
 
 
 
-
 #l {
-  animation: l1 5s infinite linear;
+  animation: l1 3s infinite linear;
+  display: block;
 }
 
 #o {
-  animation: o1 5s infinite linear;
+  animation: o1 3s infinite linear;
+  display: block;
+  padding-left: 5px;
 }
 
-#a {
-  animation: a1 5s infinite linear;
+#ugoke {
+
+  padding: 0 5px;
+  display: block;
+  animation: ugoite 3s infinite linear;
 }
 
 #q {
-  animation: d1 5s infinite linear;
+  display: block;
+  animation: d1 3s infinite linear;
 }
 
 #i {
-  animation: i1 5s infinite linear;
+  padding: 0 5px;
+  display: block;
+  animation: i1 3s infinite linear;
 }
 
 #n {
-  animation: n1 5s infinite linear;
+  display: block;
+  animation: n1 3s infinite linear;
 }
 
 #g {
-  animation: g1 5s infinite linear;
+  padding: 0 5px;
+  display: block;
+  animation: g1 3s infinite linear;
 }
 
 
 @keyframes l1 {
   0% {
-    color: #0bd;
-    transform: translateY(0);
-  }
-
-  15% {
     color: #000;
-    transform: translateY(-50px)scale(2);
-  }
-
-  40% {
     transform: translateY(0);
   }
 
-  60% {
+  12.5% {
+    color: blueviolet;
+    transform: translateY(-10px);
+  }
+
+  25% {
+    color: #000;
     transform: translateY(0);
   }
 
-  80% {
+  37.5% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  62.5% {
+    transform: translateY(0);
+  }
+
+  75% {
     transform: translateY(0);
   }
 
@@ -691,132 +714,242 @@ footer {
   }
 }
 
-@keyframes a1 {
+@keyframes o1 {
   0% {
-    filter: brightness(1);
+
     transform: translateY(0);
   }
 
-  20% {
-    filter: brightness(1);
+  12.5% {
+    color: #000;
     transform: translateY(0);
   }
 
-  40% {
-    filter: brightness(100);
+  25% {
+    color: blueviolet;
     transform: translateY(-10px);
   }
 
-  60% {
-    filter: brightness(1);
+  37.5% {
+    color: #000;
     transform: translateY(0);
   }
 
-  80% {
-    filter: brightness(1);
+  50% {
+    transform: translateY(0);
+  }
+
+  62.5% {
+    transform: translateY(0);
+  }
+
+  75% {
     transform: translateY(0);
   }
 
   100% {
-    filter: brightness(1);
+    transform: translateY(0);
+  }
+}
+
+@keyframes ugoite {
+  0% {
+
+    transform: translateY(0);
+  }
+
+  12.5% {
+
+    transform: translateY(0);
+  }
+
+  25% {
+    color: #000;
+    transform: translateY(0);
+  }
+
+  37.5% {
+    color: blueviolet;
+    transform: translateY(-10px);
+  }
+
+  50% {
+    color: #000;
+    transform: translateY(0);
+  }
+
+  62.5% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(0);
+  }
+
+  100% {
     transform: translateY(0);
   }
 }
 
 @keyframes d1 {
   0% {
-    filter: brightness(1);
+
     transform: translateY(0);
   }
 
-  20% {
-    filter: brightness(1);
+  12.5% {
+
     transform: translateY(0);
   }
 
-  40% {
-    filter: brightness(1);
+  25% {
     transform: translateY(0);
   }
 
-  60% {
-    filter: brightness(100);
+  37.5% {
+    color: #000;
+    transform: translateY(0);
+  }
+
+  50% {
+    color: blueviolet;
     transform: translateY(-10px);
   }
 
-  80% {
-    filter: brightness(1);
+  62.5% {
+    color: #000;
+    transform: translateY(0);
+  }
+
+  75% {
     transform: translateY(0);
   }
 
   100% {
-    filter: brightness(1);
     transform: translateY(0);
   }
 }
 
 @keyframes i1 {
   0% {
-    filter: brightness(1);
+
     transform: translateY(0);
   }
 
-  20% {
-    filter: brightness(1);
+  12.5% {
+
     transform: translateY(0);
   }
 
-  40% {
-    filter: brightness(1);
+  25% {
     transform: translateY(0);
   }
 
-  60% {
-    filter: brightness(1);
+  37.5% {
     transform: translateY(0);
   }
 
-  80% {
-    filter: brightness(100);
+  50% {
+    color: #000;
+    transform: translateY(0);
+  }
+
+  62.5% {
+    color: blueviolet;
     transform: translateY(-10px);
   }
 
+  75% {
+    color: #000;
+    transform: translateY(0);
+  }
+
   100% {
-    filter: brightness(1);
     transform: translateY(0);
   }
 }
 
 @keyframes n1 {
   0% {
-    filter: brightness(1);
+
     transform: translateY(0);
   }
 
-  20% {
-    filter: brightness(1);
+  12.5% {
+    color: #000;
     transform: translateY(0);
   }
 
-  40% {
-    filter: brightness(1);
+  25% {
     transform: translateY(0);
   }
 
-  60% {
-    filter: brightness(1);
+  37.5% {
     transform: translateY(0);
   }
 
-  80% {
-    filter: brightness(1);
+  50% {
     transform: translateY(0);
+  }
+
+  62.5% {
+    color: #000;
+    transform: translateY(0);
+  }
+
+  75% {
+    color: blueviolet;
+    transform: translateY(-10px);
   }
 
   100% {
-    filter: brightness(100);
+    color: #000;
+    transform: translateY(0);
+  }
+}
+
+@keyframes g1 {
+  0% {
+
+    transform: translateY(0);
+  }
+
+  12.5% {
+    color: #000;
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(0);
+  }
+
+  37.5% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  62.5% {
+    transform: translateY(0);
+  }
+
+  75% {
+    color: #000;
+    transform: translateY(0);
+  }
+
+  99% {
+    color: blueviolet;
     transform: translateY(-10px);
   }
+
+  100% {
+    color: blueviolet;
+    transform: translateY(-10px);
+  }
+
 }
 
 
