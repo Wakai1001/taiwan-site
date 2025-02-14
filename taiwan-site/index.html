@@ -57,12 +57,8 @@
 
     <h1 class="pc_top_image"><img src="top/image/pc_top_title.png" alt="TAIWAN"></h1>
 
-
-
   </header>
   <main>
-
-
     <section class="introduction">
       <div class="intro_top">
         <div class="content">
@@ -85,14 +81,18 @@
       <div class="content">
         <h2>Gallery <span>ギャラリー</span></h2>
         <img id="photo" src="top/image/top_gallery_img1.jpg" alt="ギャラリー画像">
-        <ul>
-          <li class="btn" data-image="top/image/top_gallery_img1.jpg"></li>
-          <li class="btn" data-image="top/image/top_gallery_img2.jpg"></li>
-          <li class="btn" data-image="top/image/top_gallery_img3.jpg"></li>
-          <li class="btn" data-image="top/image/top_gallery_img4.jpg"></li>
-          <li class="btn" data-image="top/image/top_gallery_img5.jpg"></li>
-        </ul>
-
+        <div class="list">
+          <input type="radio" name="gallery" checked class="btn" data-image="top/image/top_gallery_img1.jpg" id="img1">
+          <label for="img1" class="radio_label"></label>
+          <input type="radio" name="gallery" class="btn" data-image="top/image/top_gallery_img2.jpg" id="img2">
+          <label for="img2" class="radio_label"></label>
+          <input type="radio" name="gallery" class="btn" data-image="top/image/top_gallery_img3.jpg" id="img3">
+          <label for="img3" class="radio_label"></label>
+          <input type="radio" name="gallery" class="btn" data-image="top/image/top_gallery_img4.jpg" id="img4">
+          <label for="img4" class="radio_label"></label>
+          <input type="radio" name="gallery" class="btn" data-image="top/image/top_gallery_img5.jpg" id="img5">
+          <label for="img5" class="radio_label"></label>
+        </div>
       </div>
     </section>
     <section class="travel">

@@ -121,20 +121,50 @@ header {
   margin-bottom: 20px;
 }
 
-.gallery ul {
-  display: flex;
-  justify-content: space-evenly;
-  max-width: 300px;
-  margin-right: auto;
-  margin-left: auto;
+
+/* btn */
+input[type="radio"] {
+  display: none;
 }
 
-.gallery ul li {
+.radio_label {
+  position: relative;
+  padding: 0 0 0 38px;
+}
+
+
+.radio_label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 19px;
   width: 18px;
   height: 18px;
-  background-color: #00000080;
+  background-color: #000000;
+  opacity: 0;
   border-radius: 50%;
+  z-index: 50;
+
 }
+
+.radio_label::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50%;
+  left: 19px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #00000080;
+}
+
+input[type=radio]:checked+.radio_label::before {
+  opacity: 1;
+}
+
+
 
 /* travel */
 .travel p {
@@ -449,6 +479,6 @@ header {
   height: 100vh;
 
   /* ↓ここ青にしてください↓ */
-  background-color: #6cbad8;
+  background-color: #0180be;
   /* ↑明るめの青でお願いします↑ */
 }
