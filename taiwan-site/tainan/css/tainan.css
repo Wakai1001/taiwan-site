@@ -3,12 +3,10 @@
 /* 全体 */
 html {
   overflow-x: hidden;
-  width: 375px;
-  font-family: "Zen Kaku Gothic New,sans-serif";
-  font-family: "Josefin Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+}
+
+.scroll {
+  overflow: hidden;
 }
 
 body {
