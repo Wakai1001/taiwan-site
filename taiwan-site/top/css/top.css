@@ -118,6 +118,22 @@ header {
 .gallery img {
   width: 300px;
   height: 400px;
+  margin-bottom: 20px;
+}
+
+.gallery ul {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.gallery ul li {
+  width: 18px;
+  height: 18px;
+  background-color: #00000080;
+  border-radius: 50%;
 }
 
 /* travel */
@@ -313,6 +329,11 @@ header {
   }
 
   /* gallery */
+  .pc_flex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   .gallery .content h2 {
     margin-left: 0;
   }
