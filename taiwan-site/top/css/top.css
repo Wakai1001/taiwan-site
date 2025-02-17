@@ -121,6 +121,11 @@ header {
   margin-bottom: 20px;
 }
 
+.list {
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 /* btn */
 input[type="radio"] {
@@ -129,7 +134,7 @@ input[type="radio"] {
 
 .radio_label {
   position: relative;
-  padding: 0 0 0 38px;
+  padding: 0 0 0 50px;
 }
 
 
