@@ -36,6 +36,14 @@ a:visited {
   display: none;
 }
 
+/* header hover */
+.menu li a:hover {
+  background-color: #ffffffb7;
+  color: #000;
+
+}
+
+
 /* footer */
 footer {
   background-color: #007AB7;
@@ -78,10 +86,17 @@ footer {
 
 .f_nav li {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 2px;
   border-bottom: #fff solid 1px;
   padding-left: 7.5px;
   padding-bottom: 7px;
+  padding-top: 10px;
+}
+
+.f_nav li:hover {
+  background-color: #ffffff80;
+  transition-property: background-color;
+  transition-duration: 2000ms;
 }
 
 .sns_logo {
@@ -97,6 +112,12 @@ footer {
 .sns_logo a {
   display: inline-block;
   height: 100%;
+}
+
+.sns_logo a:hover {
+  transform: scale(1.5);
+  transition-property: transform;
+  transition-duration: 2000ms;
 }
 
 .sns_logo li:not(:first-of-type) {
@@ -288,6 +309,13 @@ footer {
     width: 56vw;
   }
 
+  /* header hover */
+  .pc_menu li a:hover {
+    transform: scale(1.1);
+    text-decoration: underline 2px #fff;
+  }
+
+
   /* nav */
   .menu_icon {
     display: none;
@@ -343,7 +371,7 @@ footer {
 
     font-size: 20px;
     padding-bottom: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .f_img {
