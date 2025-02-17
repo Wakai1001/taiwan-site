@@ -4,11 +4,14 @@ body {
   /* max-width: 375px; */
   font-family: 'Zen Kaku Gothic New', sans-serif;
   background-color: #f4f4f4;
-   
   font-family: "Zen Kaku Gothic New", serif;
-    font-weight: 400;
-    font-style: normal;
-  
+  font-weight: 400;
+  font-style: normal;
+}
+
+html{
+  scroll-behavior: smooth;
+  /* overflow-x:hidden ; */
 }
 
 
@@ -16,29 +19,33 @@ body {
 header {
   background: url(../image/taipei_top.png) no-repeat top center/cover;
   /* max-width: 375px; */
-  width: 100%;
+  /* width: 100%; */
+  width: 100vw;
   height: 177.86vw;
   /* padding: 2.133vw 3.2vw; */
   position: relative;
   /* max-width: 375px; */
   /* height: 667px; */
+
 }
 
-/* 台北の文字がでかいです */
+/* 台北のデカ文字 */
 .taipei_top2 {
-  /* 台北のデカ文字 */
   /* height:372px; */
-
+  position: absolute;
   /* 199/375*100 */
   width: 53vw;
   /* height: 372px; */
   display: block;
-  margin: auto;
+  top: 32vw;
+  right: 23.4vw;
+  /* margin: auto; */
   /* padding-top: 120px; */
   /* max-width: 199px; */
-  padding:  32vw 0vw 0 ;
+  /* padding:  32vw 0vw 0 ; */
 }
 
+/* 右下の小さい白文字 */
 header p {
   color: #fff;
   /* font-size: 12px; */
@@ -49,7 +56,7 @@ header p {
   /* top: 90.104vw; */
   bottom: 2.133vw;
   right: 1vw;
-  /* line-height: 19.2px; */
+  line-height: 1.6;
 }
 
 
@@ -65,6 +72,7 @@ header p {
   /* height: 1740px; */
   margin: auto 40px;
   width: 78.6vw;
+  margin-top: 64px;
 }
 
 /* ラーメンみたいな画像付けた見出しです(使いまわせます) */
@@ -80,14 +88,29 @@ header p {
   background: url(../image/frame.png) no-repeat bottom center/cover;
   align-items: center;
 }
+/* NightMarket夜一 */
+.heading2 {
+  height: 7vw;
+  /* padding-top: 3px; */
+  font-size: 5.8vw;
+  font-weight: 400;
+  text-align: center;
+  background: url(../image/frame.png) no-repeat bottom center/cover;
+  align-items: center;
+  width: 60vw;
+  height: 10vw;
+  margin: auto;
+}
+
 /* 九分の画像 */
-.kyufun{
+.kyufun {
   width: 78.6vw;
   margin: auto;
 }
+
 /* 見出しの小さい文字です18pxは適当 */
 .sub {
-  font-size: 18px;
+  font-size: 3.5vw;
   text-align: center;
 }
 
@@ -100,9 +123,10 @@ header p {
   text-align: center;
   /* width: 100%; */
 }
+
 /* 青いテキストの中 */
 .paragraph {
-  font-size: 12px;
+  font-size: 3.2vw;
   line-height: 19.2px;
   /* margin: 20px 16px; */
   text-align: start;
@@ -115,9 +139,10 @@ header p {
   padding: 20px 16px;
 }
 
-p{
+p {
   margin: 0;
 }
+
 /* 九分の青いテキストエリア */
 .blue {
   max-height: 231px;
@@ -125,23 +150,25 @@ p{
   /* width: 78.6vw; */
   background-color: rgba(108, 196, 216, 0.2);
   /* padding: 20px 16px; */
-  margin:  20.5px 0;
+  margin: 20.5px 0;
   /* display: block; */
   text-align: center;
   align-items: center;
   width: 78.6vw;
   /* padding-left: 20px; */
 }
+
 /* 九分の画像二つ並び */
 .imagebox {
   display: flex;
   justify-content: space-between;
   /* max-width: 295px; */
   /* width: 100%; */
-  width:78.6vw ;
+  width: 78.6vw;
 }
+
 /* 画像二つを同じクラスに */
-.kyufun_box1{
+.kyufun_box1 {
   width: 100%;
   /* max-width: 140px; */
   width: 37.3vw;
@@ -152,28 +179,29 @@ p{
 /* 幻想的な夕暮れがねらい目 */
 .text2 {
   font-size: 12px;
-  line-height: 12px;
+  line-height: 1;
   text-align: center;
-max-width: 144px;
-/* width: 38vw; */
-margin: 8px auto;
+  max-width: 144px;
+  /* width: 38vw; */
+  margin: 8px auto;
 }
 
 /* 15:00～19:00 */
-.text3{
-font-size: 16px;
-font-weight: bold;
-line-height: 16px;
-text-align: center;
-margin: 8px 0;
+.text3 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+  margin: 8px 0;
 }
 
 /* 九分の青いテキストエリア */
-.blue2{
-background-color: rgba(108, 196, 216, 0.2);
-margin: 20px 0 40px;
-max-height: 52px;
-padding: 8px;
+.blue2 {
+  background-color: rgba(108, 196, 216, 0.2);
+  margin: 20px 0 40px;
+  max-height: 52px;
+  padding: 8px 0;
+  width: 78.6vw;
 }
 
 /* 台北101上の横線 */
@@ -182,53 +210,56 @@ padding: 8px;
   max-width: 60vw;
   height: 1px;
   background-color: black;
-  margin:  auto;
+  margin: auto;
 }
 
 /* 台北101の写真 */
-.taipei101{
+.taipei101 {
   width: 78.6vw;
   margin: auto;
 }
+
 /* 台北101の青いテキストエリア */
-.blue3{
+.blue3 {
   background-color: rgba(108, 196, 216, 0.2);
   margin: 20px 0 40px;
   max-height: 192px;
   /* padding: 8px; */
   width: 78.6vw;
-  }
+}
 
-  /* 台北101の青いテキスト */
-  .text4 {
-    font-size: 12px;
-    line-height: 12px;
-    /* text-align: center; */
+/* 台北101の青いテキスト */
+.text4 {
+  font-size: 12px;
+  line-height: 12px;
+  /* text-align: center; */
   max-width: 70vw;
   width: 70vw;
   /* width: 38.4px; */
-  padding: 20px 16px;
+  /* padding: 20px 16px; */
+  padding: 5.33vw 4.26vw;
   margin: auto;
   max-height: 192px;
-  }
+}
+
+/* section NightMarket */
+.NightMarket {
+  /* max-width: 295px; */
+  /* height: 1740px; */
+  margin: auto 40px;
+  width: 78.6vw;
+}
 
 
-  .NightMarket {
-    /* max-width: 295px; */
-    /* height: 1740px; */
-    margin: auto 40px;
-    width: 78.6vw;
-  }
-
-
-  /* NightMarket 夜一 */
+/* NightMarket 夜一 */
 .text-container {
-  width: 78.67vw; 
+  font-size: 3.2vw;
+  width: 78.67vw;
   /* 375pxに対する295pxの割合 */
   /* max-width: 295px; */
   /* height: 33.87vw; 375pxに対する127pxの割合 */
   max-height: 127px;
-  height: 127px;
+  height: 33.86vw;
   margin: 0 auto;
   display: block;
   display: flex;
@@ -236,7 +267,7 @@ padding: 8px;
   justify-content: center;
   /* text-align: center; */
   position: relative;
-  padding: 16px 0; 
+  /* padding: 3.26vw 0; */
   /* 上下に16pxの余白を追加（なんか）16だと余白ないんで32x */
 }
 
@@ -259,46 +290,49 @@ padding: 8px;
   bottom: 0;
 }
 
-.text-container{
+.text-container {
   margin: 40px auto 20px;
 }
 
 .text-container p {
   /* margin: auto; */
-  line-height: 19.2px;
-  min-height: 95px;
+  line-height: 1.6;
+  max-height: 95px;
   /* height: 95px; */
   /* align-items: center; */
+  font-size: 3.2vw;
 }
+
 /* 画像です */
-.nightmarket1{
+.nightmarket1 {
   width: 78.6vw;
   /* margin:  auto; */
-  margin:  20px auto;
-align-items: center;
+  margin: 20px auto;
+  align-items: center;
 
 }
+
 /* 画像です */
-.nightmarket2{
+.nightmarket2 {
   width: 78.6vw;
-  margin:  20px  auto;
-align-items: center;
+  margin: 20px auto;
+  align-items: center;
 }
 
 /* モーダルボタンの親 */
-.modalBtn{
+.modalBtn {
   /* display: flex; */
-      /* flex-wrap: wrap; */
-      /* justify-content: space-between; */
-      /* margin: auto; */
-      max-width: 73vw;
-      margin: auto;
-      gap: 3.2vw;
-/* margin: 0 50px; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  /* margin: auto; */
+  max-width: 73vw;
+  margin: auto;
+  gap: 3.2vw;
+  /* margin: 0 50px; */
   display: grid;
-grid-template-rows:15vw 15vw ;
-grid-template-columns: 35vw 35vw ;
-row-gap: 3.2vw;
+  grid-template-rows: 15vw 15vw;
+  grid-template-columns: 35vw 35vw;
+  row-gap: 3.2vw;
 }
 
 
@@ -320,12 +354,12 @@ row-gap: 3.2vw;
   /* border: none; */
   /* background: #ccc; */
   cursor: pointer;
-  margin: auto ;
+  margin: auto;
   /* align-items: center; */
 }
 
 /* モーダルのボタン四つ(こっちが本体) */
-.btnflame{
+.btnflame {
   width: 34vw;
   /* height: 57px; */
   /* margin:12px ; */
@@ -336,7 +370,7 @@ row-gap: 3.2vw;
 }
 
 /* sction Access */
-.Access{
+.Access {
   margin: auto 40px;
   width: 78.6vw;
   margin-top: 40px;
@@ -344,51 +378,64 @@ row-gap: 3.2vw;
 }
 
 /* 各地へのアクセスにご利用ください */
-.access_subtext{
+.access_subtext {
   margin: 0 auto 8px;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 1;
   text-align: center;
 }
 
 /* 下の横線 */
-.access_sub{
+.access_sub {
   border-bottom: 1px solid black;
-  padding: 8px 0;
+  /* padding: 8px 0; */
   max-width: 60vw;
   margin-bottom: 20px;
   margin: auto;
 }
-
-.access{
+/* taxi */
+.accessPic {
   width: 78.6vw;
-  margin:  20px 0px;
-align-items: center;
+  margin: 20px 0px;
+  align-items: center;
 }
 
-.subway{
+.subway {
   margin-bottom: 12px;
 }
 
-.subwayText{
-margin-bottom: 20px;
+.subwayText {
+  margin-bottom: 20px;
 }
 
-.subway{
+.subway {
   font-size: 12px;
   font-weight: bold;
   line-height: 12px;
 }
-.benesse{
+
+.benesse {
   width: 26.6vw;
 }
-.textaria{
+
+.textaria {
   font-size: 12px;
-  line-height: 19.2px;
+  line-height: 1.6;
+}
+.textaria2 {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.br{
+  display: contents;
 }
 
 
-.modal,.modal2,.modal3,.modal4 {
+.modal1,
+.modal2,
+.modal3,
+.modal4 {
   display: none;
   position: fixed;
   top: 0;
@@ -401,7 +448,10 @@ margin-bottom: 20px;
   /* align-items: center; */
 }
 
-.modal-content,.modal-content2,.modal-content3,.modal-content4 {
+.modal-content,
+.modal-content2,
+.modal-content3,
+.modal-content4 {
   /* background: white; */
   /* padding: 20px; */
   width: 100%;
@@ -409,47 +459,49 @@ margin-bottom: 20px;
   position: relative;
   text-align: center;
   /* border-radius: 10px; */
-  
-}
 
-.close_btn{
+}
+/* modalのバツボタン */
+.close_btn {
   display: block;
   margin: 10px;
-margin-left: auto;
+  margin-left: auto;
 
 }
 
 /* モーダルの画像のことです。 */
-.market_modal1{
+.market_modal1 {
   width: 89vw;
   /* display: block; */
 }
 
-.modalTitle{
+.modalTitle {
   color: #ffffff;
   font-size: 24px;
   font-weight: bold;
   margin: 80px auto 32px;
 }
 
-.modalText{
+.modalText {
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
-  line-height: 19.2px;
+  /* line-height: 19.2px; */
+  line-height: 1.6;
   width: 80.8vw;
   margin: 20px auto;
   height: 115.2px;
   text-align: left;
 }
 
-.modalText2{
+.modalText2 {
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
-  line-height: 19.2px;
+  line-height: 1.6;
   margin: 20px 0 133px;
 }
+
 /* .modal-content img {
   width: 335px;
   height: 223px;
@@ -467,28 +519,462 @@ margin-left: auto;
   height: 20px;
   cursor: pointer;
 }
+
 /* ここからフッターの微調整 */
-.f_nav{
-padding: 0;
+.f_nav {
+  padding: 0;
 }
-a{
+
+a {
   text-decoration: none;
   color: #f4f4f4;
 }
 
-.sns_logo{
+.sns_logo {
   padding: 0;
   list-style: none;
   text-decoration-line: none;
 }
+
 /* .copyright{ */
-  /* padding: 20px auto; */
+/* padding: 20px auto; */
 /* } */
 
 
-@media screen and (max-width:767px){
+@media screen and (max-width:767px) {}
+
+@media screen and (min-width:768px) {
+
+
+  header {
+    /* 必要か？ */
+    /* max-width: 1366px; */
+    height: 768px;
+    background: url(../image/taipei_top.png)no-repeat center center/cover;
+  }
+
+  .taipei_top2 {
+    max-width: 300px;
+    width: 21.9vw;
+    /* display: block; */
+    top: 7.5vw;
+    left: 26.5vw;
+    /* position: absolute; */
+    /* max-width: 100vw; */
+  }
+
+
+  header p {
+    font-size: 20px;
+    bottom: 2vw;
+    right: 10vw;
+    width: 35vw;
+    position: absolute;
+    line-height: 32px;
+  }
+
+  .heading {
+    width: 60vw;
+    height: 10vw;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-top: 3px;
+    font-size: 5.8vw;
+    font-weight: 400;
+    text-align: center;
+    background: url(../image/frame.png) no-repeat bottom center/cover;
+    align-items: center;
+  }
+
+
+  .heading {
+    width: 40vw;
+    height: 7vw;
+    /* margin: 0 auto; */
+    margin-top: 120px;
+    margin-bottom: 80px;
+    /* padding-top: 3px; */
+    font-size: 4.5vw;
+    /* font-size: clamp(22px, 5vw, 44px); */
+    font-weight: 400;
+    text-align: center;
+    /* align-items: left; */
+    margin-left: 0;
+  }
+
+  .heading2 {
+    max-width: 1140px;
+    height: 7vw;
+    /* padding-top: 3px; */
+    font-size: 4.5vw;
+    font-weight: 400;
+    text-align: center;
+    background: url(../image/frame.png) no-repeat bottom center/cover;
+    align-items: center;
+    width: 40vw;
+    height: 7vw;
+    margin: 120px 0 80px auto;
+    
+  }
+
+
+.Attraction{
+  max-width: 1140px;
+  width: 95vw;
+  margin: auto;
+}
+.pcSection2{
+  max-width: 1120px;
+      width: 93.3vw;
+      margin-left: 0px;
 }
 
-@media screen and (min-width:768px){
-  
+.sub{
+  font-size: 2vw;
 }
+
+  .subtitle {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+    /* margin: 40px auto 20.5px; */
+    text-align: left;
+    /* width: 100%; */
+    margin-left: 20px;
+  }
+
+  .kyufun,
+  .taipei101 {
+    /* width: min(36vw, ); */
+    width: 50vw;
+    margin: auto;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    object-fit: cover;
+    height: 360px;
+  }
+
+  .blue,
+  .blue3 {
+    height: 100%;
+    /* padding: 0; */
+    /* margin:  20px 0; */
+    display: block;
+    text-align: center;
+    align-items: center;
+    width: 40vw;
+    /* padding-left: 20px; */
+    grid-column: 2/3;
+    grid-row: 1/2;
+    /* padding: 40px 10px; */
+    margin: 10px 20px;
+    font-size: 20px;
+    align-self: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 35vw;
+    margin: 0;
+    margin-left: 3.3vw;
+    max-width: 480px;
+  }
+
+
+  .blue2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 50px auto;
+    align-self: center;
+    width: 40vw;
+    height: 100%;
+    margin-left: 3.3vw;
+    max-width: 480px;
+    display: block;
+    position: absolute;
+    padding: 8px 0;
+  }
+
+  /* 九分の青文字 */
+  .paragraph,
+  .text4 {
+    font-size: min(1.6vw, 20px);
+    line-height: 1.6;
+    /* margin: 20px 16px; */
+    text-align: start;
+    /* w263をvw */
+    max-width: 440px;
+    width: 38vw;
+    /* height: 320px; */
+    /* letter-spacing: 2px; */
+    /* width: max-content; */
+    /* padding: 20px ; */
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 2vw;
+  }
+
+
+  
+
+  .text2 {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: auto 0;
+    max-width: 36.6vw;
+  }
+
+  .text3 {
+    margin: 4px auto;
+  }
+
+  /* 九分の画像二つ並び */
+  .imagebox {
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 295px; */
+    /* width: 100%; */
+    /* width:78.6vw ; */
+    width: 49.9vw;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    object-fit: cover;
+    height: 177px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 49% 2% 49%;
+    grid-template-rows: 177px;
+  }
+
+  /* 画像二つを同じクラスに */
+  .kyufun_box1 {
+    /* width: 100%; */
+    /* max-width: 140px; */
+    width: 24.7vw;
+    height: 200px;
+    /* min-width: 125px; */
+    /* margin-left: 10px; */
+    display: block;
+  }
+
+  .imagebox2 {
+    margin-left: 10px;
+  }
+
+
+  .gridBox {
+    display: grid;
+    grid-template-columns: 50vw 40vw;
+    grid-template-rows: 360px 200px;
+    grid-auto-flow: row;
+    grid-auto-flow: column;
+    max-width: 1140px;
+    width: 93vw;
+    position: relative;
+  }
+
+  /* section NightMarket */
+  .NightMarket {
+    max-width: 1140px;
+    width: 95vw;
+    /* margin: auto 40px; */
+    margin-right: 0;
+  }
+
+  .pcSection1{
+    max-width: 1120px;
+      width: 93.3vw;
+      margin-left: 0px;
+  }
+  .border {
+    margin: 120px auto;
+    width: 100%;
+    width: 30vw;
+    
+  }
+
+  .text-container {
+    max-width: 35vw;
+    max-height: 256px;
+    margin-right: 8.3vw;
+    /* margin-top: 50px; */
+    /* position: relative; */
+    margin: 0 auto;
+    height: 256px;
+  }
+.text-container p{
+  font-size: 1.6vw;
+  max-height: 256px;
+}
+
+
+  .text-container::before {
+    top: 0;
+    /* content: ""; */
+    /* position: absolute; */
+
+    /* padding: 0; */
+  }
+
+  .text-container::after {
+    bottom: 0;
+  }
+
+.borderText{
+  line-height: 1.6;
+    font-size: 1.6vw;
+    max-height: 256px;
+    /* height: 21.33vw; */
+    /* width: 35vw; */
+}
+
+  .nightmarket1,
+  .nightmarket2 {
+    /* 本当は540px */
+    max-width: 531px;
+    /* width: 45vw; */
+    margin: 0;
+    max-height: 264px;
+  }
+.nightmarket1{
+  width: 45vw;
+}
+  .nightmarket2 {
+    margin-top: 40px;
+    width: 45vw;
+    max-height: 252px;
+    height: 245px;
+  }
+
+  .modalBtn {
+            max-width: 540px;
+        max-height: 252px;
+        width: 45vw;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        gap: 1.6vw;
+        margin-top: 2.2vw;
+    }
+
+  .btnflame {
+    max-width: 254px;
+    max-height: 110px;
+    margin: 0;
+    width: 21.16vw;
+  }
+
+  .flexbox {
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+
+
+  /* 寧夏夜市 適当に書いたから修正して*/
+  .modalTitle{
+font-size: 24px;
+        text-align: left;
+        margin-left: 130px;
+  }
+
+.market_modal1{
+  width: 335px;
+  height: 223px;
+  margin-left: 10vw;
+}
+.pcModal{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.pcModal2{
+  display: flex;
+  flex-direction: column;
+}
+
+.modalText{
+  margin: 20px 20px;
+ width: 40vw;
+}
+.modalText2{
+  margin: 20px 0;
+}
+
+
+/* section Access */
+  .Access {
+    max-width: 1140px;
+    width: 95vw;
+    margin-bottom: 60px;
+  }
+  .accessPic{
+    max-width: 100%;
+    width: 93.3vw;
+    margin-bottom: 60px;
+  }
+
+.pcSection2{
+  max-width: 1120px;
+    width: 93.3vw;
+    margin-left: 20px;
+}
+
+  .access_subtext {
+    margin: 0 auto 8px;
+    font-size: 24px;
+    line-height: 1;
+    max-width: 420px;
+    width: 35vw;
+    text-align: center;
+  }
+
+  /* 下の横線 */
+  .access_sub {
+    border-bottom: 1px solid black;
+    padding: 8px 0;
+    max-width: 420px;
+    margin: auto;
+    width: 32vw;
+    margin-left: 0;
+    margin-bottom: 80px;
+  }
+
+  .subway{
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .textaria{
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+  }
+.textaria2{
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+    margin-left: 2vw;
+  }
+
+
+  .subwayText{
+margin-bottom: 60px;
+  }
+  .br{
+    display: flex;
+  }
+
+  .benesse{
+    max-width: 246px;
+    width: 20.5vw;
+    height: 155px;
+    margin-bottom: 20px;
+    margin-left: 2vw;
+  }
+  footer{
+    margin-top: 20vw;
+  }
+  }
