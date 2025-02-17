@@ -127,6 +127,20 @@ header {
   margin-left: auto;
 }
 
+.gallery .arrow {
+  display: none;
+  width: 64px;
+  height: 64px;
+}
+
+.gallery_img {
+  display: flex;
+  width: 295px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* btn */
 input[type="radio"] {
   display: none;
@@ -369,9 +383,45 @@ input[type=radio]:checked+.radio_label::before {
   }
 
   .gallery img {
-    width: 340px;
+    width: 25vw;
     height: auto;
+    margin-right: 6vw;
   }
+
+  .gallery .gallery_img {
+    width: 90vw;
+
+  }
+
+  .gallery .list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    justify-content: space-between;
+  }
+
+  .gallery .arrow {
+    display: block;
+    padding: 30px 30px 0 30px;
+    margin: 0;
+  }
+
+  .radio_label {
+    padding: 0 30px;
+  }
+
+  .radio_label::before {
+    width: 28px;
+    height: 28px;
+
+  }
+
+  .radio_label::after {
+    width: 28px;
+    height: 28px;
+  }
+
 
   /* travel */
   .pc_flex {
