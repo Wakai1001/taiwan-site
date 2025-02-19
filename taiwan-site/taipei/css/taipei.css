@@ -15,6 +15,10 @@ html{
 
 
 /* width100%の方がいいと思う */
+.scroll {
+  overflow: hidden;
+}
+
 header {
   background: url(../image/taipei_top.png) no-repeat top center/cover;
   /* max-width: 375px; */
