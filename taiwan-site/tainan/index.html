@@ -137,9 +137,14 @@
             </div>
             <img src="image/tuki.png" alt="度小月" class="gazou">
             <p class="yohaku">台湾の屋台などでもよく食べられている麵料理で、あっさりしたスープにそぼろがトッピングされているのが特徴です。「度小月」は各地に支店を持つ人気店です。</p>
-            <a href="#" class="tanyao">
-              <p>画像を見る</p><span class="sankaku">▶</span>
-            </a>
+
+            <!-- タンツーメンのモーダル -->
+            <div class="modal1" >
+              <a href="#" id="bt1" class="image-button"  onclick="openModal(); return false;">
+                <p class="modal_p">画像を見る</p>
+                <span class="sankaku">▶</span>
+              </a>
+            </div>
           </div>
           <div id="ebi">
             <div id="dai2">
@@ -148,9 +153,12 @@
             </div>
             <img src="image/ebimeshi.png" alt="仔成" class="gazou">
             <p class="yohaku">台南10大美食にも選ばれている代表料理です。中でも有名な「矮仔成」は、台南に来ないと味わえない料理として知られており、日本人にも好まれる味です。</p>
-            <a href="#" class="tanyao">
-              <p>画像を見る</p><span class="sankaku">▶</span>
-            </a>
+            <div class="modal1" >
+              <a href="#" id="bt2" class="image-button" onclick="openModal(); return false;">
+                <p class="modal_p">画像を見る</p>
+                <span class="sankaku">▶</span>
+              </a>
+            </div>
           </div>
           <div id="ron">
             <div id="dai3">
@@ -159,24 +167,31 @@
             </div>
             <img src="image/syanhai.png" alt="上海" class="gazou">
             <p class="yohaku">小籠包は世界中で愛されている台湾料理の一つですよね。「上海華都小吃」は、上海スタイルの料理を提供してくれるお店で、特に小籠包に定評があります。</p>
-            <a href="#" class="tanyao">
-              <p>画像を見る</p><span class="sankaku">▶</span>
-            </a>
-          </div>
-          <div id="kamo">
-            <div id="dai4">
-              <p class="ookime" id="nikumesi">鴨肉飯</p>
-              <p class="pinhu">ヤーロウファン</p>
+            <div class="modal1" >
+              <a href="#" class="image-button" id="bt3">
+                <p class="modal_p">画像を見る</p>
+                <span class="sankaku">▶</span>
+              </a>
             </div>
-            <img src="image/kamomesi.png" alt="鴨飯" class="gazou">
-            <p class="yohaku">台湾の軽食文化を指す小吃は、台湾の人々の日々の食生活に欠かせないものとなっています。中でも「亞德當歸鴨」の鴨肉飯は人気の一品です。</p>
-            <a href="#" class="tanyao">
-              <p>画像を見る</p><span class="sankaku">▶</span>
+          </div>
+        
+        <div id="kamo">
+          <div id="dai4">
+            <p class="ookime" id="nikumesi">鴨肉飯</p>
+            <p class="pinhu">ヤーロウファン</p>
+          </div>
+          <img src="image/kamomesi.png" alt="鴨飯" class="gazou">
+          <p class="yohaku">台湾の軽食文化を指す小吃は、台湾の人々の日々の食生活に欠かせないものとなっています。中でも「亞德當歸鴨」の鴨肉飯は人気の一品です。
+          </p>
+          <div class="modal1" >
+            <a href="#" class="image-button" id="bt4">
+              <p class="modal_p">画像を見る</p>
+              <span class="sankaku">▶</span>
             </a>
           </div>
         </div>
       </div>
-
+    </div>
     </section>
     <section class="healing">
       <div class="wakuwakusan">
@@ -236,6 +251,26 @@
     <!-- <div class="loading">
       <img src="/taiwan-site/tainan/image/logo.svg" alt="ロゴ" id="cc">
     </div> -->
+    <!-- モーダルウインドウ -->
+    <div id="modal1" class="modal">
+      <img class="close_btn" id="close1" src="image/close_btn.svg" alt="閉じる" onclick="closeModal()">
+      <img class="modal_pic1" src="image/modal1.png" alt="エビラーメンの画像">
+    </div>
+
+    <div id="modal2" class="modal">
+      <img class="close_btn" id="close2" src="image/close_btn.svg" alt="閉じる" onclick="closeModal()">
+      <img class="modal_pic1" src="image/modal2.png" alt="まずそうな飯">
+    </div>
+
+<div id="modal3" class="modal">
+      <img class="close_btn" id="close3" src="image/close_btn.svg" alt="閉じる" onclick="closeModal()">
+      <img class="modal_pic1" src="image/modal3.png" alt="エビラーメンの画像">
+    </div>
+
+    <div id="modal4" class="modal">
+      <img class="close_btn" id="close4" src="image/close_btn.svg" alt="閉じる" onclick="closeModal()">
+      <img class="modal_pic1" src="image/modal4.png" alt="鴨肉">
+    </div>
 
     <script src="../common/js/loading.js"></script>
     <script src="js/tainan.js"></script>

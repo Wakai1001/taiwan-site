@@ -19,8 +19,107 @@ main {
   margin: 0 8px;
 
 }
+/* 画像を見るのaタグ */
+.image-button {
+  /* display: inline-flex; */
+  text-align: end;
+  display: block;
+  border: solid 3px orange;
+  max-width: 120px;
+  width: 100px;
+  margin-left: auto;
+  padding: 5px;
+  color: #000;
+  display: flex;
+}
 
+/* modalのバツボタン */
+.close_btn {
+  /* display: block; */
+  margin: 10px;
+  margin-left: auto;
+  /* position: absolute; */
+  top: 30vw;
+  right: 0;
+  display: block;
+    margin: 10px;
+    margin-left: auto;
+}
 
+.modal.show{
+  background-color: #ffffff;
+}
+
+.modal_pic1{
+  box-shadow: 10px 10px 15px -10px;
+}
+
+.modal_p{
+/* background-color: #f4f4f4; */
+color: #000;
+margin: 0 auto;
+}
+
+/* .modal,
+.modal2,
+.modal3,
+.modal4 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+   width: 375px;
+  width: 100%;
+  height: 100%;
+  background: #0180BE;
+  justify-content: center;
+  align-items: center;
+}  */
+
+.sankaku {
+  margin-left: 0px;
+    margin-right: 3vw
+}
+
+.image-button:hover {
+  /* background-color: #0056b3; */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.close-button {
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #cc0000;
+}
 
 
 
@@ -1243,9 +1342,30 @@ footer{
   }
 
   .tanyao {
-    width: 120px;
+    width: 17.5vw;
     line-height: 1.5;
   }
+
+  .image-button {
+    /* display: inline-flex; */
+    text-align: end;
+    display: block;
+    border: solid 3px orange;
+    /* max-width: 120px; */
+    /* width: 100px; */
+    margin-left: auto;
+    padding: 5px;
+    color: #000;
+    display: flex;
+    width: 17.5vw;
+    line-height: 1.5;
+    /* height: 63px; */
+  }
+
+  .sankaku {
+    margin-left: 0px;
+    margin-right: 0vw;
+}
 
   #dai1 {
     display: flex;
